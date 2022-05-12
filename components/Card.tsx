@@ -20,7 +20,7 @@ const Card: React.FC<Props> = ({ item ,scrollTop = false}) => {
 			scale: 1.05,
 			transition: { duration: 0.5 },
 		}}
-		whileTap={{ scale: 0.9 }}>
+	>
 			<Link href={`/post/${item?.id}`} scroll={scrollTop} >
 				<a>
 					<div
