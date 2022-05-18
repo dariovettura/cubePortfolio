@@ -98,6 +98,11 @@ li {
   display: flex;
   align-items: center;
 }
+.footer-logo-block{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
 
 // MENU DRAWER &  SIDEBAR// MENU DRAWER &  SIDEBAR// MENU DRAWER &  SIDEBAR// MENU DRAWER &  SIDEBAR// MENU DRAWER &  SIDEBAR// MENU DRAWER &  SIDEBAR
 // MENU DRAWER &  SIDEBAR// MENU DRAWER &  SIDEBAR// MENU DRAWER &  SIDEBAR// MENU DRAWER &  SIDEBAR// MENU DRAWER &  SIDEBAR// MENU DRAWER &  SIDEBAR
@@ -348,6 +353,8 @@ html {
   .footer {
     margin-left: 300px;
   }
+
+  .footer-logo-block{display: none;}
 }
 @media only screen and (max-width: 800px) {
   .card {
