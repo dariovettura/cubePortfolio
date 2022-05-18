@@ -9,6 +9,7 @@ import Sidebar from '../components/Sidebar';
 import { NextSeo } from 'next-seo';
 import CookieConsent from 'react-cookie-consent';
 import Link from 'next/link';
+import Footer from '../components/Footer';
 
 
 function MyApp({ Component, pageProps, router }: AppProps) {
@@ -61,7 +62,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       <Component key={router.route} {...pageProps} />
 
     </AnimatePresence>
-
+    <Footer />
   </Provider>
 }
 
