@@ -1,6 +1,5 @@
 @import "variables";
 
-
 html,
 body {
   overflow-x: hidden;
@@ -53,7 +52,7 @@ li {
   margin: 0;
 }
 
-.divider{
+.divider {
   width: 100%;
   border: 1px solid $divider-color;
 }
@@ -83,16 +82,21 @@ li {
   font-size: 30px;
 }
 
-.logo-1{
+.logo-1 {
   color: $logo-color-1;
-  
 }
-.logo-2{color:$logo-color-2; font-family: $logo-font}
+.logo-2 {
+  color: $logo-color-2;
+  font-family: $logo-font;
+}
 
-.footer{
+
+// FOOTER // FOOTER // FOOTER// FOOTER // FOOTER // FOOTER // FOOTER// FOOTER // FOOTER // FOOTER // FOOTER // FOOTER
+.footer {
+  margin-top: 40px;
   flex-direction: column;
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 // MENU DRAWER &  SIDEBAR// MENU DRAWER &  SIDEBAR// MENU DRAWER &  SIDEBAR// MENU DRAWER &  SIDEBAR// MENU DRAWER &  SIDEBAR// MENU DRAWER &  SIDEBAR
@@ -224,7 +228,7 @@ html {
   height: 100%;
   margin: 0 auto;
 }
-.all-work-container{
+.all-work-container {
   margin-top: 100px;
 }
 
@@ -341,7 +345,9 @@ html {
     justify-content: start;
   }
 
-  .footer{margin-left: 300px;}
+  .footer {
+    margin-left: 300px;
+  }
 }
 @media only screen and (max-width: 800px) {
   .card {
