@@ -27,7 +27,7 @@ const InfoTab: React.FC<Props> = ({ }) => {
                 <Image alt="Paolo Minopoli" src="https://paolominopoli.vercel.app/avatar-paolo.png" layout="fill" />
             </Avatar>
         </div>
-        <span style={{ marginTop: "10px" }}> <Logo ></Logo></span>
+        <span style={{ marginTop: "10px" ,zIndex:"10"}}> <Logo ></Logo></span>
         <div style={{ display: "flex",  marginTop: "10px" }}>
 
             <Link  href={info[0]?.acf.instagram ? info[0]?.acf.instagram : "/"} >
