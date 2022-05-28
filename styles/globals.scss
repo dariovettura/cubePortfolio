@@ -73,7 +73,11 @@ li {
   position: fixed;
   z-index: 1;
   justify-content: center;
+  transition: 0.3s linear;
+  top: 0px;
 }
+
+.hidden{top:-80px}
 
 .header .menu {
   margin-left: auto;
