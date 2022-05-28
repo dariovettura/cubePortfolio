@@ -86,11 +86,39 @@ li {
 }
 
 .logo-1 {
-  color: $logo-color-1;
+  color: $logo-color-2;
 }
 .logo-2 {
-  color: $logo-color-2;
+  // color: $logo-color-2;
+  animation: flicker 2.5s infinite alternate;
+  color: #fff;
   font-family: $logo-font;
+  text-shadow:
+    /* White glow */
+    0 0 7px #fff,
+      0 0 10px #fff,
+    
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+    
+}
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+   
+      0 0 40px #0fa,
+      0 0 80px #0fa,
+    
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
 }
 
 // FOOTER // FOOTER // FOOTER// FOOTER // FOOTER // FOOTER // FOOTER// FOOTER // FOOTER // FOOTER // FOOTER // FOOTER
@@ -172,7 +200,9 @@ html {
 // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE
 // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE
 .neon {
-  box-shadow: 0px 0px 40px 0px #008069;
+  box-shadow:   0 0 11px #fff,
+   
+  0 0 40px #0fa,;
   transition: 0.5s;
 }
 
