@@ -44,7 +44,7 @@ h2 {
 p {
   color: $p-color;
   font-family: $p-font;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 28px;
 }
 
@@ -90,7 +90,7 @@ li {
 }
 .logo-2 {
   // color: $logo-color-2;
-  animation: flicker 2.5s infinite alternate;
+  animation: flicker 1.5s infinite alternate;
   color: #fff;
   font-family: $logo-font;
   text-shadow:
@@ -116,7 +116,7 @@ li {
   
   }
   
-  20%, 24%, 55% {        
+  1%, 14%, 35% {        
       text-shadow: none;
   }    
 }

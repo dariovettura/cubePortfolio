@@ -38,7 +38,7 @@ const PrivacyPolicy: NextPage<Props> = ({ post, infos }) => {
     return (
         <div className="root">
             <div style={{display:"flex",flexDirection:"column"}}>
-            <p style={{ fontSize: "20px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
+            <p style={{ fontSize:"17px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
                 
                 PRIVACY POLICY
                 I - INFORMAZIONI RELATIVE ALLA PRIVACY POLICY DEL SITO
@@ -46,7 +46,7 @@ const PrivacyPolicy: NextPage<Props> = ({ post, infos }) => {
                 di paolominopoli.vercel.app in riferimento al trattamento dei dati degli utenti di
                 paolominopoli.vercel.app.
                 </p>
-                <p style={{ fontSize: "20px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
+                <p style={{ fontSize:"17px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
                 2. La presente informativa ha valore anche ai fini dell&apos;articolo 13 del Regolamento
                 (UE) n. 2016/679, relativo alla protezione delle persone fisiche con riguardo al
                 trattamento dei dati personali nonché alla libera circolazione di tali dati, per i soggetti
@@ -54,7 +54,7 @@ const PrivacyPolicy: NextPage<Props> = ({ post, infos }) => {
                 corrispondente alla pagina iniziale:
                 www.paolominopoli.vercel.app
                 </p>
-                <p style={{ fontSize: "20px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
+                <p style={{ fontSize:"17px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
                 3. L&apos;informativa è resa solo per paolominopoli.vercel.app e non anche per altri
                 siti web eventualmente consultati dall&apos;utente tramite link in esso contenuti.
                 4. Scopo del presente documento è fornire indicazioni circa le modalità, i tempi e la
@@ -63,7 +63,7 @@ const PrivacyPolicy: NextPage<Props> = ({ post, infos }) => {
                 indipendentemente dagli scopi del collegamento stesso, secondo la legislazione
                 Italiana ed Europea.
                 </p>
-                <p style={{ fontSize: "20px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
+                <p style={{ fontSize:"17px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
                 5. L&apos;informativa può subire modifiche a causa dell&apos;introduzione di nuove norme al
                 riguardo, si invita pertanto l&apos;utente a controllare periodicamente la presente pagina.
                 6. Se l&apos;utente ha meno di 14 anni, ai sensi dell&apos;art.8, c.1 regolamento (UE) 2016/679,
@@ -71,7 +71,7 @@ const PrivacyPolicy: NextPage<Props> = ({ post, infos }) => {
                 dovrà legittimare il suo consenso attraverso l&apos;autorizzazione dei genitori o di chi ne fa
                 le veci.
                 </p>
-                <p style={{ fontSize: "20px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
+                <p style={{ fontSize:"17px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
                 II - TRATTAMENTO DEI DATI
                 1 - Titolare dei Dati
                 1. Il titolare del trattamento è la persona fisica o giuridica, l&apos;autorità pubblica, il
@@ -90,7 +90,7 @@ const PrivacyPolicy: NextPage<Props> = ({ post, infos }) => {
                 dal responsabile del trattamento o soggetti da esso incaricati a tal fine presso la
                 relativa sede.
                 </p>
-                <p style={{ fontSize: "20px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
+                <p style={{ fontSize:"17px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
                 III - COOKIES
                 1 - Tipo di Cookies
                 1. Il sito paolominopoli.vercel.app utilizza cookies per rendere l&apos;esperienza di navigazione
@@ -110,7 +110,7 @@ const PrivacyPolicy: NextPage<Props> = ({ post, infos }) => {
                 opzioni relative ai cookies è sufficiente continuare con la navigazione.
                 Di seguito le tipologie di cookies di cui il sito fa uso:
                 </p>
-                <p style={{ fontSize: "20px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
+                <p style={{ fontSize:"17px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
                 2 - Cookies tecnici
                 1. Ci sono numerose tecnologie usate per conservare informazioni nel computer
                 dell&apos;utente, che poi vengono raccolte dai siti. Tra queste la più conosciuta e utilizzata
@@ -119,7 +119,7 @@ const PrivacyPolicy: NextPage<Props> = ({ post, infos }) => {
                 comunicazioni su rete elettronica ovvero al fornitore per erogare il servizio richiesto
                 dal cliente.
                 </p>
-                <p style={{ fontSize: "20px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
+                <p style={{ fontSize:"17px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
                 2. Le impostazioni per gestire o disattivare i cookies possono variare a seconda del
                 browser internet utilizzato. Ad ogni modo, l&apos;utente può gestire o richiedere la
                 disattivazione generale o la cancellazione dei cookies, modificando le impostazioni
@@ -145,7 +145,7 @@ const PrivacyPolicy: NextPage<Props> = ({ post, infos }) => {
                 sessione costituiti da numeri casuali generati dal server necessari per consentire
   l&apos;esplorazione sicura ed efficiente del sito.
   </p>
-  <p style={{ fontSize: "20px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
+  <p style={{ fontSize:"17px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
                 3 - Cookies di terze parti
                 1. In relazione alla provenienza si distinguono i cookies inviati al browser
                 direttamente dal sito che si sta visitando e quelli di terze parti inviati al computer da
@@ -175,7 +175,7 @@ const PrivacyPolicy: NextPage<Props> = ({ post, infos }) => {
                 3. Si applicherà l&apos;articolo 22 del Regolamento (UE) 2016/679 e l&apos;articolo 122 del
                 Codice in materia di protezione dei dati.
                 </p>
-                <p style={{ fontSize: "20px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
+                <p style={{ fontSize:"17px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
                 IV - DATI TRATTATI
                 1 - Modalità trattamento dati
                 1. Come tutti i siti web anche il presente sito fa uso di log files nei quali vengono
@@ -245,7 +245,7 @@ const PrivacyPolicy: NextPage<Props> = ({ post, infos }) => {
                 nel social network allora ha già acconsentito all&apos;uso dei cookie veicolati tramite
                 questo sito al momento dell&apos;iscrizione al social network.
                 </p>
-                <p style={{ fontSize: "20px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
+                <p style={{ fontSize:"17px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
                 V. DIRITTI DELL&apos;UTENTE
                 
                 1. L&apos;art. 13, c. 2 del Regolamento (UE) 2016/679 elenca i diritti dell&apos;utente.
@@ -283,7 +283,7 @@ const PrivacyPolicy: NextPage<Props> = ({ post, infos }) => {
                 6. Per una disamina più approfondita dei diritti che Le competono, si vedano gli
                 articoli 15-22 del Regolamento (UE) 2016/679.
                 </p>
-                <p style={{ fontSize: "20px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
+                <p style={{ fontSize:"17px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
                 VI - TRASFERIMENTO DATI A PAESI EXTRA UE
                 1. Il presente sito potrebbe condividere alcuni dei dati raccolti con servizi localizzati al
                 di fuori dell&apos;area dell&apos;Unione Europea. In particolare con Google, Facebook e
@@ -295,7 +295,7 @@ const PrivacyPolicy: NextPage<Props> = ({ post, infos }) => {
                 2. Non verranno mai trasferiti dati a Paesi terzi che non rispettino le condizioni
                 previste dall&apos;articolo 45 e ss, del Regolamento (UE).
                 </p>
-                <p style={{ fontSize: "20px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
+                <p style={{ fontSize:"17px", margin: "0px 15px 0px 15px", padding: "45px", color: "#fff", width: "100%" }}>
                 VII. SICUREZZA DATI FORNITI
                 1. Il presente sito tratta i dati degli utenti in maniera lecita e corretta, adottando le
                 opportune misure di sicurezza volte ad impedire accessi non autorizzati,
