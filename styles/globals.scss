@@ -2,6 +2,7 @@
 
 html,
 body {
+  font-size: 1em;
   overflow-x: hidden;
   background: $body-bg-color;
   padding: 0;
@@ -28,12 +29,14 @@ a {
 }
 
 h1 {
+  font-size: 2em;
   font-family: $h1-font;
   font-weight: bold;
   color: $h1-color;
   margin: 6px 0 12px;
 }
 h2 {
+  font-size: 1.625em;
   color: $h2-color;
   font-family: $h2-font;
   margin: 8px 0;
@@ -41,7 +44,7 @@ h2 {
 p {
   color: $p-color;
   font-family: $p-font;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 28px;
 }
 
