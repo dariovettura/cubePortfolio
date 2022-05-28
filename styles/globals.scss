@@ -93,7 +93,6 @@ li {
   font-family: $logo-font;
 }
 
-
 // FOOTER // FOOTER // FOOTER// FOOTER // FOOTER // FOOTER // FOOTER// FOOTER // FOOTER // FOOTER // FOOTER // FOOTER
 .footer {
   margin-top: 40px;
@@ -101,7 +100,7 @@ li {
   display: flex;
   align-items: center;
 }
-.footer-logo-block{
+.footer-logo-block {
   flex-direction: column;
   display: flex;
   align-items: center;
@@ -172,6 +171,10 @@ html {
 // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE
 // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE
 // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE
+.neon {
+  box-shadow: 0px 0px 40px 0px #008069;
+  transition: 0.5s;
+}
 
 #card-list-container,
 .post-container {
@@ -357,7 +360,9 @@ html {
     margin-left: 300px;
   }
 
-  .footer-logo-block{display: none;}
+  .footer-logo-block {
+    display: none;
+  }
 }
 @media only screen and (max-width: 800px) {
   .card {

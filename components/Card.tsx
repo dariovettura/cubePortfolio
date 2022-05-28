@@ -11,7 +11,11 @@ interface Props {
 
 }
 
+
 const Card: React.FC<Props> = ({ item ,scrollTop = false}) => {
+
+	const [neon,setNeon] = React.useState(false)
+
 
 
 	return (
@@ -20,12 +24,14 @@ const Card: React.FC<Props> = ({ item ,scrollTop = false}) => {
 			scale: 1.05,
 			transition: { duration: 0.5 },
 		}}
+		onTapStart={()=>setNeon(true)}
+		onTapCancel={()=>setNeon(false)}
 	>
 			<Link href={`/post/${item?.id}`} scroll={scrollTop} >
 				<a>
 					<div
 						className="card-content-container">
-						<div className="card-content">
+						<div className={`card-content ${neon && "neon" }`}>
 							<div className="card-image-container">
 								<Image alt="Paolo Minopoli" layout="fill"
 									className="card-image" src={item?.acf?.anteprima ? item?.acf?.anteprima : "/"} />
