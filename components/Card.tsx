@@ -21,9 +21,11 @@ const Card: React.FC<Props> = ({ item ,scrollTop = false}) => {
 	return (
 		<motion.li className={`card`}
 		whileHover={{
-			scale: 1.05,
+			scale: 1.02,
 			transition: { duration: 0.5 },
 		}}
+		onMouseEnter={()=>setNeon(true)}
+		onMouseLeave={()=>setNeon(false)}
 		onTapStart={()=>setNeon(true)}
 		onTapCancel={()=>setNeon(false)}
 	>
@@ -31,7 +33,7 @@ const Card: React.FC<Props> = ({ item ,scrollTop = false}) => {
 				<a>
 					<div
 						className="card-content-container">
-						<div className={`card-content ${neon && "neon" }`}>
+						<div className={`card-content ${neon ? "neon":"NOneon" }`}>
 							<div className="card-image-container">
 								<Image alt="Paolo Minopoli" layout="fill"
 									className="card-image" src={item?.acf?.anteprima ? item?.acf?.anteprima : "/"} />

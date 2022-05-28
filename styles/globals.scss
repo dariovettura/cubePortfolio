@@ -213,9 +213,14 @@ html {
 // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE
 // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE
 .neon {
-  box-shadow:   0 0 11px #fff,
-   
+  box-shadow:  
+   0 0 11px #fff, 
   0 0 40px #0fa,;
+  transition: 0.5s;
+}
+.NOneon {
+  box-shadow:  
+ unset;
   transition: 0.5s;
 }
 
@@ -248,7 +253,7 @@ html {
   flex-wrap: wrap;
   align-content: flex-start;
 }
-.card {
+.card {z-index: 22;
   position: relative;
   padding: 25px;
   height: 460px;
