@@ -24,8 +24,7 @@ const Card: React.FC<Props> = ({ item ,scrollTop = false}) => {
 			scale: 1.02,
 			transition: { duration: 0.5 },
 		}}
-		onMouseEnter={()=>setNeon(true)}
-		onMouseLeave={()=>setNeon(false)}
+	
 		onTapStart={()=>setNeon(true)}
 		onTapCancel={()=>setNeon(false)}
 	>
