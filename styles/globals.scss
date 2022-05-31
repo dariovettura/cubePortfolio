@@ -77,7 +77,9 @@ li {
   top: 0px;
 }
 
-.hidden{top:-80px}
+.hidden {
+  top: -80px;
+}
 
 .header .menu {
   margin-left: auto;
@@ -93,40 +95,29 @@ li {
   color: $logo-color-2;
 }
 .logo-2 {
-
   // color: $logo-color-2;
-   animation: flicker 1.5s infinite alternate;
+  animation: flicker 1.5s infinite alternate;
   color: #fff;
   font-family: $logo-font;
-  text-shadow:
-  0 0 7px #fff,
-  0 0 10px #fff,
-
-  /* Green glow */
-  0 0 42px #0fa,
-  0 0 82px #0fa,
-
-    
-    
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, /* Green glow */ 0 0 42px #0fa,
+    0 0 82px #0fa;
 }
 @keyframes flicker {
-    
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
-
-      text-shadow:
-      0 0 4px #fff,
-      0 0 11px #fff,
-
-      0 0 40px #0fa,
-      0 0 80px #0fa,
-   
-    
-  
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 40px #0fa, 0 0 80px #0fa;
   }
-  
-  20%, 24%, 55% {        
-      text-shadow: none;
-  }    
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
 }
 
 // FOOTER // FOOTER // FOOTER// FOOTER // FOOTER // FOOTER // FOOTER// FOOTER // FOOTER // FOOTER // FOOTER // FOOTER
@@ -208,26 +199,12 @@ html {
 // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE
 // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE // CARD STYLE
 .neon {
-  box-shadow:  
-   0 0 11px #fff, 
-  0 0 40px #0fa,;
+  box-shadow: 0 0 11px #fff, 0 0 40px #0fa;
   transition: 0.5s;
 }
 .NOneon {
-  box-shadow:  
- unset;
+  box-shadow: unset;
   transition: 0.5s;
-}
-
-.player-wrapper {
-  position: relative;
-  padding-top: 100% /* Player ratio: 100 / (1280 / 720) */
-}
-
-.react-player {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 #card-list-container,
@@ -325,14 +302,15 @@ html {
   object-fit: cover;
 }
 
-.video_player {
-  height: 100% !important;
-  width: 100% !important;
+.player-wrapper {
+  position: relative;
+  padding-top: 100% /* Player ratio: 100 / (1280 / 720) */;
+  margin-bottom: 30px;
 }
-.video_player video {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 // SKETCHFAB// SKETCHFAB// SKETCHFAB// SKETCHFAB// SKETCHFAB// SKETCHFAB
@@ -372,7 +350,7 @@ html {
 @media only screen and (min-width: 1200px) {
   .player-wrapper {
     position: relative;
-    padding-top: 50% /* Player ratio: 100 / (1280 / 720) */
+    padding-top: 50%; /* Player ratio: 100 / (1280 / 720) */
   }
   .model-swipe,
   .model-swipe .MuiBackdrop-root {

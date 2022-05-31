@@ -50,7 +50,7 @@ const renderVideo = () =>{
 	muted
 	width='100%'
 	height='100%'
-	url="https://www.youtube.com/watch?v=WsOsuT4wJPA"
+	url={content?.acf?.videolink}
 	playsinline
 	loop
 />
@@ -63,7 +63,7 @@ const renderVideo = () =>{
 			{lay.map((obj, i) =>
 				contentRender(obj, i)
 			)}
-			{renderVideo()}
+			{content?.acf?.videolink && renderVideo()}
 			{content?.acf?.galleria &&
 				content?.acf?.galleria.map((el: any) =>
 					<div key={el.id} className="post-img-container" >
