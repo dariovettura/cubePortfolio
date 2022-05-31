@@ -2,6 +2,7 @@ import React from "react";
 import Image from 'next/image'
 import Link from 'next/link'
 import ReactPlayer from "react-player";
+import { SourceProps } from "react-player/base";
 
 
 interface Props {
@@ -43,14 +44,14 @@ const ContentLayout: React.FC<Props> = ({ content }) => {
 			return obj && <div key={i} className='post-content-container' dangerouslySetInnerHTML={{ __html: obj }} />
 	}
 
-	const renderVideo = () => {
+	const renderVideo = (url: string | string[] | SourceProps[] | MediaStream | undefined) => {
 		return <div className="player-wrapper">
 			<ReactPlayer
 				className='react-player'
 				muted
 				width='100%'
 				height='100%'
-				url={content?.acf?.videolink}
+				url={url}
 				playsinline
 				playing
 				loop
@@ -64,14 +65,15 @@ const ContentLayout: React.FC<Props> = ({ content }) => {
 			{lay.map((obj, i) =>
 				contentRender(obj, i)
 			)}
-			{content?.acf?.videolink && renderVideo()}
+			{content?.acf?.videotop && renderVideo(content?.acf?.videotop)}
 			{content?.acf?.galleria &&
 				content?.acf?.galleria.map((el: any) =>
 					<div key={el.id} className="post-img-container" >
 						<Image src={el.url} className="gallery-img" layout="fill" />
 						{el.description && <p className='post-content-description'>{el.description}</p>}
-						s</div>
+						</div>
 				)}
+					{content?.acf?.videobottom && renderVideo(content?.acf?.videobottom)}
 		</>
 	);
 }
