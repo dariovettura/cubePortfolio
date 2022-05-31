@@ -27,9 +27,9 @@ const ContentLayout: React.FC<Props> = ({ content }) => {
 
 	const contentRender = (obj: any, i: number) => {
 		if (obj && obj.type && obj.type == "image")
-			return <div className="post-img-container" key={i} ><Image  
-		 src={obj.url} className="gallery-img" layout="fill"  />
-			{obj.description &&	<p className='post-content-description'>{obj.description}</p>}</div>
+			return <div className="post-img-container" key={i} ><Image
+				src={obj.url} className="gallery-img" layout="fill" />
+				{obj.description && <p className='post-content-description'>{obj.description}</p>}</div>
 		if (obj && obj.type && obj.type == "video")
 			return <div key={i}><ReactPlayer
 				muted
@@ -38,12 +38,24 @@ const ContentLayout: React.FC<Props> = ({ content }) => {
 				playsinline
 				loop
 			/>
-					{obj.description &&	<p className='post-content-description'>{obj.description}</p>}</div>
-	else
-			return  obj && <div key={i} className='post-content-container' dangerouslySetInnerHTML={{ __html: obj }} />
+				{obj.description && <p className='post-content-description'>{obj.description}</p>}</div>
+		else
+			return obj && <div key={i} className='post-content-container' dangerouslySetInnerHTML={{ __html: obj }} />
 	}
 
-
+const renderVideo = () =>{
+	return <div className="player-wrapper">	
+	<ReactPlayer
+	className='react-player'
+	muted
+	width='100%'
+	height='100%'
+	url="https://www.youtube.com/watch?v=WsOsuT4wJPA"
+	playsinline
+	loop
+/>
+</div>
+}
 
 
 	return (
@@ -51,12 +63,14 @@ const ContentLayout: React.FC<Props> = ({ content }) => {
 			{lay.map((obj, i) =>
 				contentRender(obj, i)
 			)}
-			{content?.acf?.galleria && 
-			content?.acf?.galleria.map((el: any) =>
-				<div key={el.id} className="post-img-container" ><Image  
-				 src={el.url} className="gallery-img" layout="fill"  />
-				{el.description &&	<p className='post-content-description'>{el.description}</p>}</div>
-			)}
+			{renderVideo()}
+			{content?.acf?.galleria &&
+				content?.acf?.galleria.map((el: any) =>
+					<div key={el.id} className="post-img-container" >
+						<Image src={el.url} className="gallery-img" layout="fill" />
+						{el.description && <p className='post-content-description'>{el.description}</p>}
+						s</div>
+				)}
 		</>
 	);
 }

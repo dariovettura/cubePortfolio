@@ -219,6 +219,17 @@ html {
   transition: 0.5s;
 }
 
+.player-wrapper {
+  position: relative;
+  padding-top: 100% /* Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 #card-list-container,
 .post-container {
   max-width: 990px;
@@ -359,6 +370,10 @@ html {
 // MEDIA QUERY// MEDIA QUERY// MEDIA QUERY// MEDIA QUERY// MEDIA QUERY// MEDIA QUERY
 
 @media only screen and (min-width: 1200px) {
+  .player-wrapper {
+    position: relative;
+    padding-top: 50% /* Player ratio: 100 / (1280 / 720) */
+  }
   .model-swipe,
   .model-swipe .MuiBackdrop-root {
     left: 300px;
