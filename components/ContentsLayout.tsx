@@ -43,19 +43,20 @@ const ContentLayout: React.FC<Props> = ({ content }) => {
 			return obj && <div key={i} className='post-content-container' dangerouslySetInnerHTML={{ __html: obj }} />
 	}
 
-const renderVideo = () =>{
-	return <div className="player-wrapper">	
-	<ReactPlayer
-	className='react-player'
-	muted
-	width='100%'
-	height='100%'
-	url={content?.acf?.videolink}
-	playsinline
-	loop
-/>
-</div>
-}
+	const renderVideo = () => {
+		return <div className="player-wrapper">
+			<ReactPlayer
+				className='react-player'
+				muted
+				width='100%'
+				height='100%'
+				url={content?.acf?.videolink}
+				playsinline
+				playing
+				loop
+			/>
+		</div>
+	}
 
 
 	return (
