@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import ReactPlayer from "react-player";
 import { SourceProps } from "react-player/base";
+import { Rings } from "react-loader-spinner";
 
 
 interface Props {
@@ -13,8 +14,10 @@ interface Props {
 
 const ContentLayout: React.FC<Props> = ({ content }) => {
 
+	const [loader, setLoader] = React.useState(true)
+
 	const contentToArray = () => {
-		if (content && content?.acf?.contents)
+		if (content && content?.acf?.contents) 
 			return Object.keys(content?.acf?.contents)
 				.map(function (key) {
 					return content.acf.contents[key];
@@ -46,6 +49,7 @@ const ContentLayout: React.FC<Props> = ({ content }) => {
 
 	const renderVideo = (url: string | string[] | SourceProps[] | MediaStream | undefined) => {
 		return <div className="player-wrapper">
+			  {loader && <Rings  wrapperClass="loader video_loader" color="#008069" ariaLabel="loading-indicator" />}
 			<ReactPlayer
 				className='react-player'
 				muted
@@ -55,6 +59,7 @@ const ContentLayout: React.FC<Props> = ({ content }) => {
 				playsinline
 				playing
 				loop
+				onReady={() => setLoader(false)}
 			/>
 		</div>
 	}

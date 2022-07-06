@@ -333,6 +333,10 @@ html {
   justify-content: center;
   z-index: -1;
 }
+.video_loader{
+  top:0;
+  z-index: 1;
+}
 .loader svg {
   height: 140px;
   width: 140px;
