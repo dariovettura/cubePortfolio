@@ -96,7 +96,7 @@ li {
 }
 .logo-2 {
   // color: $logo-color-2;
-  animation: flicker 1.5s infinite alternate;
+ 
   color: #fff;
   font-family: $logo-font;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, /* Green glow */ 0 0 42px #0fa,
@@ -348,6 +348,7 @@ html {
 // MEDIA QUERY// MEDIA QUERY// MEDIA QUERY// MEDIA QUERY// MEDIA QUERY// MEDIA QUERY
 
 @media only screen and (min-width: 1200px) {
+  .logo-2{  animation: flicker 1.5s infinite alternate;}
   .player-wrapper {
     position: relative;
     padding-top: 50%; /* Player ratio: 100 / (1280 / 720) */
