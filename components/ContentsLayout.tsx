@@ -71,6 +71,9 @@ const ContentLayout: React.FC<Props> = ({ content }) => {
 				contentRender(obj, i)
 			)}
 			{content?.acf?.videotop && renderVideo(content?.acf?.videotop)}
+			{content?.acf?.videotop2 && renderVideo(content?.acf?.videotop2)}
+			{content?.acf?.videotop3 && renderVideo(content?.acf?.videotop3)}
+			{content?.acf?.videotop4 && renderVideo(content?.acf?.videotop4)}
 			{content?.acf?.galleria &&
 				content?.acf?.galleria.map((el: any) =>
 					<div key={el.id} className="post-img-container" >
@@ -79,6 +82,9 @@ const ContentLayout: React.FC<Props> = ({ content }) => {
 						</div>
 				)}
 					{content?.acf?.videobottom && renderVideo(content?.acf?.videobottom)}
+					{content?.acf?.videobottom2 && renderVideo(content?.acf?.videobottom2)}
+					{content?.acf?.videobottom3 && renderVideo(content?.acf?.videobottom3)}
+					{content?.acf?.videobottom4 && renderVideo(content?.acf?.videobottom4)}
 		</>
 	);
 }
