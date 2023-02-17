@@ -551,39 +551,39 @@ const Casa: NextPage<Props> = ({}) => {
     </>)
   
 }
-export async function getStaticProps(): Promise<GetStaticPropsResult<Props>> {
-  // Call an external API endpoint to get posts.
-  // You can use any data fetching library
+// export async function getStaticProps(): Promise<GetStaticPropsResult<Props>> {
+//   // Call an external API endpoint to get posts.
+//   // You can use any data fetching library
 
   
 
-  const url =
-    "https://paolominopoli.altervista.org/wp-json/wp/v2/posts?_embed&per_page=100";
-    const infourl =
-    "https://paolominopoli.altervista.org/wp-json/wp/v2/informazioni?_embed&per_page=100";
+//   const url =
+//     "https://paolominopoli.altervista.org/wp-json/wp/v2/posts?_embed&per_page=100";
+//     const infourl =
+//     "https://paolominopoli.altervista.org/wp-json/wp/v2/informazioni?_embed&per_page=100";
 
-  //const result = await Axios.get(url);
-  //const menu =  result.data
+//   //const result = await Axios.get(url);
+//   //const menu =  result.data
 
-  const res = await fetch(url,{method:'GET'});
-  const infores = await fetch(infourl,{method:'GET'});
+//   const res = await fetch(url,{method:'GET'});
+//   const infores = await fetch(infourl,{method:'GET'});
 
-  const post = await res.json();
-  const infos = await infores.json()
+//   const post = await res.json();
+//   const infos = await infores.json()
 
-  //  const res = await fetch('https://.../posts')
-  // const posts = await res.json()
+//   //  const res = await fetch('https://.../posts')
+//   // const posts = await res.json()
 
-  // By returning { props: { posts } }, the Blog component
-  // will receive `posts` as a prop at build time
-  return {
-    props: {
-      post,
-      infos
+//   // By returning { props: { posts } }, the Blog component
+//   // will receive `posts` as a prop at build time
+//   return {
+//     props: {
+//       post,
+//       infos
 
-    },
-    revalidate: 10,
-  };
-}
+//     },
+//     revalidate: 10,
+//   };
+// }
 
 export default Casa

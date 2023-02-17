@@ -1,5 +1,5 @@
 // JavaScript Document
-
+import $ from "jquery"
 
 export const preloader =()=>{
 

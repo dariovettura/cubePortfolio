@@ -1,4 +1,5 @@
 // JavaScript Document
+import $ from "jquery"
 
 export const main = () => {
 

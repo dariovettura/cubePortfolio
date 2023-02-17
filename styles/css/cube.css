@@ -1,5 +1,6 @@
 
-@-webkit-keyframes rotating /* Safari and Chrome */ {
+
+@keyframes rotating /* Safari and Chrome */ {
   from {
     -webkit-transform: rotateY(0deg);
     -o-transform: rotateY(0deg);

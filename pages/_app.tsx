@@ -14,23 +14,34 @@ import { Provider } from "react-redux"
 import { store } from '../store/index'
 
 import Head from 'next/head';
-import { useEffect } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 import Aos from 'aos';
 import { menu } from '../utils/menu';
 import { preloader } from '../utils/preloader';
 import { game } from '../utils/game';
 import { main } from '../utils/main';
+import Script from 'next/script';
 
 
 
 function MyApp({ Component, pageProps, router }: AppProps) {
+
+  const load = useRef(null)
   useEffect(() => {
-    Aos.init();
-    menu();
-    preloader();
-    game();
-    main();
+{  
+   Aos.init();
+  menu();
+  preloader();
+  game();
+  // main();
+  }
+
+  }, [])
+
+  const onload = useCallback(refs => {
+    if (refs !== null) {
     
+    }
   }, [])
 
 
@@ -46,7 +57,11 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 
     <AnimatePresence exitBeforeEnter >
       <Component key={router.route} {...pageProps} />
+      <div ref={load}>
+    
 
+
+      </div>
     </AnimatePresence>
 
   </Provider>
