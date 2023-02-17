@@ -110,7 +110,8 @@ const Casa: NextPage<Props> = ({}) => {
     </div>
     <header className='header noVisible'>
       <div className="logo">
-        <Link href="/">
+        <Link href="/"
+         passHref={true}>
           <h2>D<span>.</span></h2>
         </Link>
       </div>
@@ -157,7 +158,8 @@ const Casa: NextPage<Props> = ({}) => {
                           <div className="container-fluid">
                             <div className="row text-center">
                               <div className="col-12 log">
-                                <Link href="#">
+                                <Link href="#"
+                                 passHref={true}>
                                   <h2>D<span>.</span></h2>
                                 </Link>
                               </div>
@@ -168,7 +170,8 @@ const Casa: NextPage<Props> = ({}) => {
                           <div className="container-fluid">
                             <div className="row text-center">
                               <div className="col-12">
-                                <Link  href="#works">
+                                <Link  href="#works"
+                                 passHref={true}>
                                   <h2 className="menulink1">WORKS<span>.</span></h2>
                                 </Link>
                               </div>
@@ -179,7 +182,8 @@ const Casa: NextPage<Props> = ({}) => {
                           <div className="container-fluid">
                             <div className="row text-center">
                               <div className="col-12">
-                                <Link  href="#about">
+                                <Link  href="#about"
+                                 passHref={true}>
                                   <h2 className="menulink2">ABOUT<span>.</span></h2>
                                 </Link>
                               </div>
@@ -190,7 +194,8 @@ const Casa: NextPage<Props> = ({}) => {
                           <div className="container-fluid">
                             <div className="row text-center">
                               <div className="col-12">
-                                <Link  href="#contacts">
+                                <Link  href="#contacts"
+                                 passHref={true}>
                                   <h2 className="menulink3">CONTACTS<span>.</span></h2>
                                 </Link>
                               </div>
@@ -221,15 +226,16 @@ const Casa: NextPage<Props> = ({}) => {
                             className="row icone text-center justify-content-center"
                           >
                             <div className="col-3 col-lg-1">
-                              <a
-                                target="_blank"
+                              <Link
+                                 passHref={true}
                                 href="https://mail.google.com/mail/?view=cm&source=mailto&to=d.vettura.wd@gmail.com"
-                                ><div className="icona2 face"></div></a>
+                                ><div className="icona2 face"></div></Link>
                             </div>
                             <div className="col-3 col-lg-1">
                               <Link
                                 // target="_blank"
                                 href="http://m.me/dario.vettura"
+                                passHref={true}
                               >
                                 <div className="icona2 insta">
                                   </div >
@@ -238,6 +244,7 @@ const Casa: NextPage<Props> = ({}) => {
                             <div className="col-3 col-lg-1">
                               <Link
                                 href="http://m.me/dario.vettura"
+                                passHref={true}
                               >
                                 <div className="icona2 linkedin"></div></Link>
                             </div>
@@ -527,12 +534,15 @@ const Casa: NextPage<Props> = ({}) => {
                 <Link
                   // target="_blank"
                   href="https://mail.google.com/mail/?view=cm&source=mailto&to=d.vettura.wd@gmail.com"
+                  passHref={true}
                   ><div className="icona gmail"></div></Link>
               </div>
               <div className="col-3 col-lg-1">
                 <Link 
                 // target="_blank"
-                 href="http://m.me/dario.vettura">
+                 href="http://m.me/dario.vettura"
+                 passHref={true}>
+                 
                   <div className="icona messenger"></div></Link>
               </div>
               <div className="col-3 col-lg-1 icona wazup"></div>
