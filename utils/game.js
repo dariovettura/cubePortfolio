@@ -1,6 +1,6 @@
 // JavaScript Document<script>
 
-
+export const game = () => {
 window.onload=function() 
 {
     var canvas=document.getElementById("game"),
@@ -8,7 +8,7 @@ window.onload=function()
     
     var width=300;
     var height=300;
-    
+
     canvas.width=width;
     canvas.height=height;
     
@@ -169,4 +169,5 @@ window.onload=function()
     ctx.fillStyle = "#fff";
     ctx.fillText("Click to play", width/2, height * 3/4);
     ctx.fillText("Click to change direction", width/2, height * 3/4 + 22);
+}
 }

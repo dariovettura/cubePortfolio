@@ -1,5 +1,7 @@
 // JavaScript Document
 
+export const main = () => {
+
  $(document).ready(() => {
     $('.slaider').slick({
         
@@ -26,4 +28,4 @@ $(".video1").click(function(){
 	$(".video3").click(function(){
     var iframe = $("#dopote");
     iframe.attr("src",iframe.data("src")); 
-});
+})}

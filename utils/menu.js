@@ -117,7 +117,19 @@ export const menu = () => {
     const cubo = document.querySelector(".cube");
     const view = document.querySelector(".viewport");
     const menutext = document.querySelector(".menutext");
-    const rooot = document.querySelectorAll('.rooot');
+    const rooot = document.querySelectorAll(".rooot");
+
+    const removeRooot = () => {
+      for (var i = 0; i < rooot.length; i++) {
+        rooot[i].classList.remove("noVisible");
+      }
+    };
+
+    const addRooot = () => {
+      for (var i = 0; i < rooot.length; i++) {
+        rooot[i].classList.add("noVisible");
+      }
+    };
 
     const gNavItems = document.querySelectorAll(".global-menu__item");
     const elmOverlay = document.querySelector(".shape-overlays");
@@ -134,10 +146,7 @@ export const menu = () => {
         cubo.classList.add("rotating");
         view.classList.remove("nascosto");
         menutext.classList.remove("nascosto");
-        for (var i = 0; i < rooot.length; i++) {
-          rooot[i].classList.add('noVisible');
-      }
-       
+        addRooot();
 
         for (var i = 0; i < gNavItems.length; i++) {
           gNavItems[i].classList.add("is-opened");
@@ -146,9 +155,7 @@ export const menu = () => {
         elmHamburger.classList.remove("is-opened-navi");
         bodys.classList.remove("overflows");
         cubo.classList.remove("rotating");
-        for (var i = 0; i < rooot.length; i++) {
-          rooot[i].classList.remove('noVisible');
-      }
+       removeRooot();
 
         for (var i = 0; i < gNavItems.length; i++) {
           gNavItems[i].classList.remove("is-opened");
@@ -163,12 +170,14 @@ export const menu = () => {
       if (overlay.isOpened === true) {
         elmHamburger.classList.add("is-opened-navi");
         bodys.classList.add("overflows");
+        addRooot();
         for (var i = 0; i < gNavItems.length; i++) {
           gNavItems[i].classList.add("is-opened");
         }
       } else {
         elmHamburger.classList.remove("is-opened-navi");
         bodys.classList.remove("overflows");
+        removeRooot();
         for (var i = 0; i < gNavItems.length; i++) {
           gNavItems[i].classList.remove("is-opened");
         }
@@ -182,12 +191,14 @@ export const menu = () => {
       if (overlay.isOpened === true) {
         elmHamburger.classList.add("is-opened-navi");
         bodys.classList.add("overflows");
+        addRooot();
         for (var i = 0; i < gNavItems.length; i++) {
           gNavItems[i].classList.add("is-opened");
         }
       } else {
         elmHamburger.classList.remove("is-opened-navi");
         bodys.classList.remove("overflows");
+        removeRooot();
         for (var i = 0; i < gNavItems.length; i++) {
           gNavItems[i].classList.remove("is-opened");
         }
@@ -201,12 +212,14 @@ export const menu = () => {
       if (overlay.isOpened === true) {
         elmHamburger.classList.add("is-opened-navi");
         bodys.classList.add("overflows");
+        addRooot();
         for (var i = 0; i < gNavItems.length; i++) {
           gNavItems[i].classList.add("is-opened");
         }
       } else {
         elmHamburger.classList.remove("is-opened-navi");
         bodys.classList.remove("overflows");
+        removeRooot();
         for (var i = 0; i < gNavItems.length; i++) {
           gNavItems[i].classList.remove("is-opened");
         }
@@ -415,4 +428,11 @@ export const menu = () => {
       }
     });
   });
+
+  // jQuery(document).ready(function( $ ){
+  //   setTimeout(function(){
+
+  //  }, 700);
+
+  // })
 };

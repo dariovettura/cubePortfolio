@@ -223,24 +223,23 @@ const Casa: NextPage<Props> = ({}) => {
                               <a
                                 target="_blank"
                                 href="https://mail.google.com/mail/?view=cm&source=mailto&to=d.vettura.wd@gmail.com"
-                                ><div className="icona2 face"></div
-                              ></a>
+                                ><div className="icona2 face"></div></a>
                             </div>
                             <div className="col-3 col-lg-1">
                               <a
                                 target="_blank"
                                 href="http://m.me/dario.vettura"
                               >
-                                <div className="icona2 insta"></div
-                              ></a>
+                                <div className="icona2 insta">
+                                  </div >
+                                  </a>
                             </div>
                             <div className="col-3 col-lg-1">
                               <a
                                 target="_blank"
                                 href="http://m.me/dario.vettura"
                               >
-                                <div className="icona2 linkedin"></div
-                              ></a>
+                                <div className="icona2 linkedin"></div></a>
                             </div>
                             <div className="col-12 sottitolo2">
                               <p>
@@ -293,7 +292,7 @@ const Casa: NextPage<Props> = ({}) => {
             </p>
             <h5>Tools:</h5>
             <p>
-              PHP,JS,CSS,Bootstrap, <br />
+              PHP,JS,CSS,Bootstrap, 
               Adobe suite
             </p>
           </div>
@@ -338,7 +337,7 @@ const Casa: NextPage<Props> = ({}) => {
             </p>
             <h5>Tools:</h5>
             <p>
-              JS,CSS,Bootstrap, <br />
+              JS,CSS,Bootstrap, 
               Adobe suite
             </p>
           </div>
@@ -354,7 +353,7 @@ const Casa: NextPage<Props> = ({}) => {
             </p>
             <h5>Tools:</h5>
             <p>
-              PHP,JS,CSS,Bootstrap, <br />
+              PHP,JS,CSS,Bootstrap, 
               Adobe suite
             </p>
           </div>
@@ -398,7 +397,7 @@ const Casa: NextPage<Props> = ({}) => {
             </p>
             <h5>Tools:</h5>
             <p>
-              JS,CSS,Bootstrap, <br />
+              JS,CSS,Bootstrap, 
               Adobe suite
             </p>
           </div>
@@ -411,7 +410,7 @@ const Casa: NextPage<Props> = ({}) => {
             <p>Online store concept made with Wordpress and Woocommerce.</p>
             <h5>Tools:</h5>
             <p>
-              PHP,JS,CSS, <br />
+              PHP,JS,CSS, 
               Adobe suite
             </p>
           </div>
@@ -455,7 +454,7 @@ const Casa: NextPage<Props> = ({}) => {
             </p>
             <h5>Tools:</h5>
             <p>
-              JS,CSS,Bootstrap, <br />
+              JS,CSS,Bootstrap, 
               Adobe suite
             </p>
           </div>
@@ -489,8 +488,7 @@ const Casa: NextPage<Props> = ({}) => {
             <h2 className="orange">Training:</h2>
             <p>
               Ilas graduate. Italian Academy of Visual Communication<span
-                >.</span
-              >
+                >.</span>
             </p>
 
             <h2 className="orange">Design for web:</h2>
@@ -498,8 +496,7 @@ const Casa: NextPage<Props> = ({}) => {
               HTML5 / CSS3 / Responsive and Adaptive Design / jQuery / Bootstrap
               / SEO - Search Engine Optimization / Web research / Wordpress /
               Material handling / Color theory / Typography / Composition<span
-                >.</span
-              >
+                >.</span>
             </p>
           </div>
         </div>
@@ -533,13 +530,11 @@ const Casa: NextPage<Props> = ({}) => {
                 <a
                   target="_blank"
                   href="https://mail.google.com/mail/?view=cm&source=mailto&to=d.vettura.wd@gmail.com"
-                  ><div className="icona gmail"></div
-                ></a>
+                  ><div className="icona gmail"></div></a>
               </div>
               <div className="col-3 col-lg-1">
                 <a target="_blank" href="http://m.me/dario.vettura">
-                  <div className="icona messenger"></div
-                ></a>
+                  <div className="icona messenger"></div></a>
               </div>
               <div className="col-3 col-lg-1 icona wazup"></div>
             </div>
@@ -553,8 +548,42 @@ const Casa: NextPage<Props> = ({}) => {
     </section>
     </div>
     </div>
-    </>
-  )
+    </>)
+  
+}
+export async function getStaticProps(): Promise<GetStaticPropsResult<Props>> {
+  // Call an external API endpoint to get posts.
+  // You can use any data fetching library
+
+  
+
+  const url =
+    "https://paolominopoli.altervista.org/wp-json/wp/v2/posts?_embed&per_page=100";
+    const infourl =
+    "https://paolominopoli.altervista.org/wp-json/wp/v2/informazioni?_embed&per_page=100";
+
+  //const result = await Axios.get(url);
+  //const menu =  result.data
+
+  const res = await fetch(url,{method:'GET'});
+  const infores = await fetch(infourl,{method:'GET'});
+
+  const post = await res.json();
+  const infos = await infores.json()
+
+  //  const res = await fetch('https://.../posts')
+  // const posts = await res.json()
+
+  // By returning { props: { posts } }, the Blog component
+  // will receive `posts` as a prop at build time
+  return {
+    props: {
+      post,
+      infos
+
+    },
+    revalidate: 10,
+  };
 }
 
 export default Casa

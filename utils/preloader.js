@@ -242,13 +242,13 @@ const ease2 = {
 
 
 
-jQuery(document).ready(function( $ ){
-     setTimeout(function(){
+// jQuery(document).ready(function( $ ){
+//      setTimeout(function(){
      
         
-    }, 700);
+//     }, 700);
 
-})
+// })
 
 ;}
 
