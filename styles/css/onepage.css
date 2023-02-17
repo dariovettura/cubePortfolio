@@ -1,0 +1,375 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+body {
+  background-color: rgb(34, 34, 34);
+  overflow-x: hidden;
+}
+.nascosto{display: none}
+.menutext h2{font-family: 'Archivo Black', sans-serif;font-size:25px}
+.menutext h3{font-family: 'Archivo Black', sans-serif;font-size:20px;color: #ff8800}
+.tops{margin-top: 60px !important}
+.web-site-main {padding-top: 100px
+
+}
+.rooot{opacity: 1; transition: opacity 1s; }
+.header{opacity: 1; transition: opacity 1s; }
+.noVisible{opacity: 0; transition: opacity 1s; }
+
+
+.logo h2 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 3em;
+  position: fixed;
+  top: 12px;
+  left: 10px;
+  color: #fff;
+  z-index: 97;
+}
+h2 span {
+  color: #ff8800;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+h2.section-tit{ font-family: 'Archivo Black', sans-serif;font-size: 2.5em;margin-bottom: 60px}
+h2.section-tit2{ font-family: 'Archivo Black', sans-serif;font-size: 2.5em;}
+
+/*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*/
+
+.cube2 .container-fluid {
+  height: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.cube2 .row {
+  height: 100%
+}
+.cube2 .col-12 {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-top: 0%
+}
+.cube2 h2 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 300px;
+}
+.hero,.hero2{margin-top: 100px}
+.hero h1,.hero2 h2{
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 50px;
+	color: #fff
+}
+.hero h2,.hero2 h3{
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 40px;
+	color: #ff8800
+}
+
+
+
+
+/*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*//*CUBE MENU*/
+.overflows {
+  overflow-y: hidden
+}
+.cube .container-fluid {
+  height: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.cube .row {
+  height: 100%
+}
+.cube .col-12 {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-top: 40%
+}
+.cube h2 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1em;
+}
+
+.log{margin-top: 0px !important}
+.log h2{font-size: 300px}
+.icona2{height: 90px;margin-top: 50px}
+
+.face {
+  background-image: url("/img/facebook.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat
+}
+.insta {
+  background-image: url("/img/insta2.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat
+}
+.linkedin {
+  background-image: url("/img/linkedin.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat
+}
+.sottitolo2 p{color: gray;margin-top: 30px;font-size: 0.5em}
+span a{color: #ff8800;}
+
+/*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*/
+
+video {
+  height: 100%;
+  width: 100%
+}
+.riga_video {
+ 
+  height: auto
+}
+.video {
+  position: relative;
+  height: 50vh;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.testo h2 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1em;
+  color: white;
+}
+.testo h3 {
+  font-size: 1em;
+  color: gray;
+}
+.testo h4 {
+  color: #ff8800;
+  font-size: 0.9em
+}
+.testo p {
+  color: white;
+  font-size:12px;
+}
+.testo h5 {
+  color: #ff8800;
+  font-size: 0.9em
+}
+.testo1 {
+  padding-top: 5%
+}
+.testo2 {
+  padding-left: 0px;
+  padding-top: 5%
+}
+.testo2 h2 {
+  font-size: 1em;
+}
+.testo3 {
+  padding-top: 5%
+}
+.testo3 h2 {
+  font-size: 1em
+}
+.testo4 {
+  padding-left: 0px;
+  padding-top: 5%
+}
+.testo4 h2 {
+  font-size: 1em
+}
+.testo5 {
+  padding-top: 10%
+}
+.modal {
+  margin-top: 30px;
+  z-index: 999999;
+}
+.modal-header {
+  border-bottom: 0px !important
+}
+.modal-footer {
+  border-top: 0px !important
+}
+.modal-dialog {
+  overflow-y: initial !important
+}
+.modal-content {
+  border-radius: 3rem
+}
+.modal-body {
+	background-color: #222;
+  height: 65vh;
+  overflow-y: auto;
+  padding: 0px;
+}
+.modal-open {
+  overflow-y: hidden;
+}
+.modal-header, .modal-footer {
+  background-color: rgba(255, 255, 255, 0);
+  position: relative;
+}
+.modale {
+	background-image: url("/video/loader.gif");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+  height: 100%;
+	border: 5px solid #fff;
+   
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.rigamodale {
+  height: 100%
+}
+.modal-dialog {
+  width: 300px;
+  margin: 1.75rem auto;
+}
+
+.modal-footer {
+ 
+	display: block;}
+
+
+.btn-secondary { box-shadow: 3px 3px 0px #222;
+    color: #222;
+    background-color: #fff;
+	border-color: #222;}
+
+
+/*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*//*ABOUT STYLE*/
+.slid {
+  height: 70vh;
+  width: 100%;
+  border: none
+}
+.nerd {
+  background-image: url("/img/nerdok.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat
+}
+.barba {
+  background-image: url("/img/barbaok.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat
+}
+.mario {
+  background-image: url("/img/mariook.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat
+}
+.goku {
+  background-image: url("/img/gokuok.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat
+}
+.slaider {
+  height: 70vh;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 30px;
+  background-image: url("/img/mescuro.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat
+}
+
+.title, h2, p {
+  color: white
+}
+.title h2{font-size: 1.5em}
+.orange {
+  color: #ff8800
+}
+
+
+
+
+
+/*CONTACTS STYLE*//*CONTACTS STYLE*//*CONTACTS STYLE*//*CONTACTS STYLE*//*CONTACTS STYLE*//*CONTACTS STYLE*//*CONTACTS STYLE*//*CONTACTS STYLE*//*CONTACTS STYLE*//*CONTACTS STYLE*//*CONTACTS STYLE*//*CONTACTS STYLE*//*CONTACTS STYLE*//*CONTACTS STYLE*//*CONTACTS STYLE*//*CONTACTS STYLE*//*CONTACTS STYLE*//*CONTACTS STYLE*//*CONTACTS STYLE*//*CONTACTS STYLE*//*CONTACTS STYLE*//*CONTACTS STYLE*//*CONTACTS STYLE*/
+#herogioco {
+     width: 308px;
+    height: 350px;
+  
+    padding-right: 0px;
+    padding-left: 0px;
+}
+#rigagioco, #colgioco {
+  height: 100%;
+}
+#rigagioco canvas {
+  border: 4px solid #fff;
+  position: absolute;
+
+}
+.titolo h2{
+  color: #fff
+}
+.sottitolo {
+  color: #fff
+}
+.icone{margin-bottom: 60px}
+.icona {
+  height: 50px
+}
+.gmail {
+  background-image: url("/img/gmail2.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat
+}
+.messenger {
+  background-image: url("/img/messenger.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat
+}
+.wazup {
+  background-image: url("/img/whatsapp.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat
+}
+@media (min-width: 992px) {
+  body {
+    background-color: rgb(39, 37, 39);
+    overflow-x: hidden;
+  }
+	.log h2{font-size: 5em !important}
+	h2.section-tit{ padding-left: 20%;font-size: 3em}
+h2.section-tit2{ padding-left: 20%;font-size: 3em }
+  #posts {
+    padding-left: 30%;
+    padding-right: 30%
+  }
+	.riga_video {
+    border: 3px solid #fff;
+    height: 60vh;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin: 1px;
+		box-shadow: 5px 5px 1px #fff;
+}
+
+	.riga-title {
+    padding-left: 20%;
+    padding-right: 20%
+  }
+	.testo p{font-size: 1em}
+	h2.section-tit{font-size: 3em}
+	.hero_video h2{font-size: 1.5em}
+	.titolo h2{font-size: 3em}
+	
+ 
+  .modal-dialog {
+    width: 300px
+  }
+}

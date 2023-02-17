@@ -1,68 +1,92 @@
+import 'bootstrap/dist/css/bootstrap.css';
+
 import '../styles/globals.scss'
+import '../styles/css/cube.css'
+import '../styles/css/onepage.css'
+import '../styles/css/preloader_cube.css'
+import '../styles/css/preloader-style.css'
+import '../styles/css/style-menu.css'
 import { AnimatePresence, AnimateSharedLayout } from "framer-motion";
-import type { AppProps } from 'next/app'
+import type { AppProps } from 'next/app';
+
+import { Helmet } from "react-helmet";
 import { Provider } from "react-redux"
 import { store } from '../store/index'
+
 import Head from 'next/head';
-import Header from '../components/Header';
-import Sidebar from '../components/Sidebar';
-import { NextSeo } from 'next-seo';
-import CookieConsent from 'react-cookie-consent';
-import Link from 'next/link';
-import Footer from '../components/Footer';
+import { useEffect } from 'react';
+import Aos from 'aos';
+import { menu } from '../utils/menu';
+import { preloader } from '../utils/preloader';
+
 
 
 function MyApp({ Component, pageProps, router }: AppProps) {
+  useEffect(() => {
+    Aos.init();
+    menu();
+    preloader();
+  }, [])
+
+
   return <Provider store={store}>
+
     <Head>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,500&display=swap" rel="stylesheet" />
+
+      <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossOrigin="anonymous"
+      />
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      />
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossOrigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossOrigin="anonymous"
+      ></script>
+
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossOrigin="anonymous"
+      ></script>
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+      {/* <script src="https://www.dariovettura.com/js/menu.js"></script> */}
+      <script src="https://www.dariovettura.com/js/main.js"></script>
+      <script src="https://www.dariovettura.com/js/game.js"></script>
+      {/* <script src="https://www.dariovettura.com/js/preloader.js"></script> */}
+
+
     </Head>
-    <NextSeo
-      title='Portfolio'
-      titleTemplate='Paolo Minopoli | %s'
-      defaultTitle="Paolo Minopoli"
-      description="3D Designer"
-      canonical="https://paolominopoli.vercel.app/"
-      openGraph={{
-        type: 'website',
-        url: "https://paolominopoli.vercel.app/",
-        title: "Paolo Minopoli",
-        description: "3D Designer",
-        images: [
-          {
-            width: 400,
-            height: 400,
-            url: "https://paolominopoli.vercel.app/avatar-paolo.png",
-            alt: "Paolo Minopoli",
-          },
-        ],
-      }}
-
-    />
-
-    <Header></Header>
-    <Sidebar></Sidebar>
-    <CookieConsent
-      contentStyle={{ margin: "0px", position: "relative" }}
-      location="bottom"
-      buttonText="Ok,Ho capito."
-      cookieName="myAwesomeCookieName2"
-      style={{ background: "#000", fontSize: "13px", fontWeight: 800 }}
-      buttonStyle={{ color: "#fff", fontWeight: 800, fontSize: "13px", background: "#008069", margin: "5px" }}
-      expires={150}
-    >
-      Questo sito usa cookies per migliorare la tua esperienza di navigazione.
-      <Link href="/privacy-policy"><span style={{ fontSize: "13px", color: "#008069", textDecoration: "underline" }} >Vedi cookies e privacy policy</span></Link>
-    </CookieConsent>
 
 
     <AnimatePresence exitBeforeEnter >
       <Component key={router.route} {...pageProps} />
 
     </AnimatePresence>
-    <Footer />
+
   </Provider>
 }
 
