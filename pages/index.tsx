@@ -4,6 +4,7 @@ import AOS from 'aos';
 import {menu} from '../utils/menu';
 import {preloader} from '../utils/preloader';
 import 'aos/dist/aos.css';
+import Link from 'next/link';
 
 
 
@@ -109,9 +110,9 @@ const Casa: NextPage<Props> = ({}) => {
     </div>
     <header className='header noVisible'>
       <div className="logo">
-        <a href="/">
+        <Link href="/">
           <h2>D<span>.</span></h2>
-        </a>
+        </Link>
       </div>
       <div className="demo-3">
         <div className="main main--demo-3">
@@ -156,9 +157,9 @@ const Casa: NextPage<Props> = ({}) => {
                           <div className="container-fluid">
                             <div className="row text-center">
                               <div className="col-12 log">
-                                <a href="#">
+                                <Link href="#">
                                   <h2>D<span>.</span></h2>
-                                </a>
+                                </Link>
                               </div>
                             </div>
                           </div>
@@ -167,9 +168,9 @@ const Casa: NextPage<Props> = ({}) => {
                           <div className="container-fluid">
                             <div className="row text-center">
                               <div className="col-12">
-                                <a className="menulink1" href="#works">
-                                  <h2>WORKS<span>.</span></h2>
-                                </a>
+                                <Link  href="#works">
+                                  <h2 className="menulink1">WORKS<span>.</span></h2>
+                                </Link>
                               </div>
                             </div>
                           </div>
@@ -178,9 +179,9 @@ const Casa: NextPage<Props> = ({}) => {
                           <div className="container-fluid">
                             <div className="row text-center">
                               <div className="col-12">
-                                <a className="menulink2" href="#about">
-                                  <h2>ABOUT<span>.</span></h2>
-                                </a>
+                                <Link  href="#about">
+                                  <h2 className="menulink2">ABOUT<span>.</span></h2>
+                                </Link>
                               </div>
                             </div>
                           </div>
@@ -189,9 +190,9 @@ const Casa: NextPage<Props> = ({}) => {
                           <div className="container-fluid">
                             <div className="row text-center">
                               <div className="col-12">
-                                <a className="menulink3" href="#contacts">
-                                  <h2>CONTACTS<span>.</span></h2>
-                                </a>
+                                <Link  href="#contacts">
+                                  <h2 className="menulink3">CONTACTS<span>.</span></h2>
+                                </Link>
                               </div>
                             </div>
                           </div>
@@ -226,27 +227,23 @@ const Casa: NextPage<Props> = ({}) => {
                                 ><div className="icona2 face"></div></a>
                             </div>
                             <div className="col-3 col-lg-1">
-                              <a
-                                target="_blank"
+                              <Link
+                                // target="_blank"
                                 href="http://m.me/dario.vettura"
                               >
                                 <div className="icona2 insta">
                                   </div >
-                                  </a>
+                                  </Link>
                             </div>
                             <div className="col-3 col-lg-1">
-                              <a
-                                target="_blank"
+                              <Link
                                 href="http://m.me/dario.vettura"
                               >
-                                <div className="icona2 linkedin"></div></a>
+                                <div className="icona2 linkedin"></div></Link>
                             </div>
                             <div className="col-12 sottitolo2">
                               <p>
-                                © Dario Vettura 2020<span>.</span> Special
-                                thanks to <span><a href=""> Paul</a></span> and
-                                <span><a href=""> Andrea</a></span> for design
-                                inspiration<span>.</span>
+                                © Dario Vettura 2020<span>.</span> 
                               </p>
                             </div>
                           </div>
@@ -270,7 +267,7 @@ const Casa: NextPage<Props> = ({}) => {
     <div className='rooot noVisible'>
  
   
-     <section id="works" className="web-site-main">
+     {/* <section id="works" className="web-site-main">
       <div className="container-fluid">
         <div className="row">
           <div className="col-12">
@@ -460,7 +457,7 @@ const Casa: NextPage<Props> = ({}) => {
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
     <section id="about" className="web-site-main">
       <div className="container-fluid">
         <div className="row">
@@ -516,7 +513,7 @@ const Casa: NextPage<Props> = ({}) => {
       <div className="container-fluid">
         <div className="row text-center">
           <div className="col-12 titolo">
-            <h2>Let's talk <span>!</span></h2>
+            <h2>Let&apos;s talk <span>!</span></h2>
           </div>
           <div className="col-12 sottitolo">
             <p>
@@ -527,14 +524,16 @@ const Casa: NextPage<Props> = ({}) => {
           <div className="col-12 sottitolo">
             <div className="row icone justify-content-center">
               <div className="col-3 col-lg-1">
-                <a
-                  target="_blank"
+                <Link
+                  // target="_blank"
                   href="https://mail.google.com/mail/?view=cm&source=mailto&to=d.vettura.wd@gmail.com"
-                  ><div className="icona gmail"></div></a>
+                  ><div className="icona gmail"></div></Link>
               </div>
               <div className="col-3 col-lg-1">
-                <a target="_blank" href="http://m.me/dario.vettura">
-                  <div className="icona messenger"></div></a>
+                <Link 
+                // target="_blank"
+                 href="http://m.me/dario.vettura">
+                  <div className="icona messenger"></div></Link>
               </div>
               <div className="col-3 col-lg-1 icona wazup"></div>
             </div>
