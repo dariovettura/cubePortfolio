@@ -6,6 +6,8 @@ import '../styles/css/onepage.css'
 import '../styles/css/preloader_cube.css'
 import '../styles/css/preloader-style.css'
 import '../styles/css/style-menu.css'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import type { AppProps } from 'next/app';
 
