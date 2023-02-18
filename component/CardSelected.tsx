@@ -99,11 +99,11 @@ export const CardSelected: React.FC<Props> = ({ id, isSelected = true, history }
       <div  {...handlers} className="card-content-container open">
         {/* <div ref={top}></div> */}
         <motion.div
-          drag="y"
-          dragConstraints={{ top: 10, bottom: 10 }}
-          onDragEnd={
-            () => checkSwipeToDismiss()
-          }
+          // drag="y"
+          // dragConstraints={{ top: 10, bottom: 10 }}
+          // onDragEnd={
+          //   () => checkSwipeToDismiss()
+          // }
           className="card-content" layoutId={`card-container-${item?.id}`}>
           <motion.div
             className="card-image-container"
