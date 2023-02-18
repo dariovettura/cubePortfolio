@@ -105,6 +105,9 @@ export const CardSelected: React.FC<Props> = ({ id, isSelected = true, history }
           //   () => checkSwipeToDismiss()
           // }
           className="card-content" layoutId={`card-container-${item?.id}`}>
+            <div className="close-card-btn-container">
+              <span className="close-card-btn" onClick={checkSwipeToDismiss}>x</span>
+            </div>
           <motion.div
             className="card-image-container"
             layoutId={`card-image-container-${item?.id}`}
@@ -124,6 +127,7 @@ export const CardSelected: React.FC<Props> = ({ id, isSelected = true, history }
           </motion.div>
 
           <motion.div className="content-container" animate dangerouslySetInnerHTML={{ __html: item?.content.rendered }} />
+
 
 
         </motion.div>

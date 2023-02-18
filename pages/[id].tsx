@@ -36,7 +36,7 @@ const Post = () => {
 
   return <>
    <div className="root">
-   <header className='header '>
+   {/* <header className='header '>
         <div className="logo">
           <Link href="/"
             passHref={true}>
@@ -44,7 +44,7 @@ const Post = () => {
           </Link>
         </div>
         <Menu/>
-      </header>
+      </header> */}
       <div className='rooot'>
     <Home />
 

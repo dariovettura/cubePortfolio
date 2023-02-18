@@ -670,7 +670,29 @@
    top: 15px;
    left: 15px;
  }
+
+ .close-card-btn-container{
+  display: flex;
+  position: sticky;
+  top: calc(100% - 58px);
+  margin-right: 9px;
+  justify-content: end;
+}
  
+.close-card-btn{
+  justify-content: center;
+  width: 50px;
+  cursor: pointer;
+  color: #ff8800;
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 0px;
+  box-shadow: 3px 3px 1px #fff;
+}
+
  h2 {
    color: #fff;
    margin: 8px 0;
