@@ -49,8 +49,7 @@ const Casa: NextPage<Props> = ({ posts }) => {
 
   return (<>
     <div className="root">
-      <Preloader />
-      <header className='header noVisible'>
+      <header className='header'>
         <div className="logo">
           <Link href="/"
             passHref={true}>
@@ -59,7 +58,7 @@ const Casa: NextPage<Props> = ({ posts }) => {
         </div>
         <Menu />
       </header>
-      <div className='rooot noVisible'>
+      <div className='rooot'>
 
         <Home />
         {/* <section id="works" className="web-site-main">

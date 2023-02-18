@@ -14,7 +14,8 @@ body {
 .web-site-main {padding-top: 100px
 
 }
-.rooot{opacity: 1; transition: opacity 1s; }
+.root{display: flex;justify-content: center;}
+.rooot{opacity: 1; transition: opacity 1s; max-width: 900px; }
 .header{opacity: 1; transition: opacity 1s; }
 .noVisible{opacity: 0; transition: opacity 1s; }
 

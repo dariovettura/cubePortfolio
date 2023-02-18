@@ -5,7 +5,7 @@ export const menu = () => {
   class ShapeOverlays {
     constructor(elm) {
       this.elm = elm;
-      this.path = elm.querySelectorAll("path");
+      this.path = elm?.querySelectorAll("path");
       this.numPoints = 2;
       this.duration = 600;
       this.delayPointsArray = [];
@@ -136,13 +136,13 @@ export const menu = () => {
     const elmOverlay = document.querySelector(".shape-overlays");
     const overlay = new ShapeOverlays(elmOverlay);
 
-    elmHamburger.addEventListener("click", () => {
+    elmHamburger?.addEventListener("click", () => {
       if (overlay.isAnimating) {
         return false;
       }
       overlay.toggle();
       if (overlay.isOpened === true) {
-        elmHamburger.classList.add("is-opened-navi");
+        elmHamburger?.classList.add("is-opened-navi");
         bodys.classList.add("overflows");
         cubo.classList.add("rotating");
         view.classList.remove("nascosto");
@@ -163,7 +163,7 @@ export const menu = () => {
         }
       }
     });
-    menulink1.addEventListener("click", () => {
+    menulink1?.addEventListener("click", () => {
       if (overlay.isAnimating) {
         return false;
       }
@@ -184,7 +184,7 @@ export const menu = () => {
         }
       }
     });
-    menulink2.addEventListener("click", () => {
+    menulink2?.addEventListener("click", () => {
       if (overlay.isAnimating) {
         return false;
       }
@@ -205,7 +205,7 @@ export const menu = () => {
         }
       }
     });
-    menulink3.addEventListener("click", () => {
+    menulink3?.addEventListener("click", () => {
       if (overlay.isAnimating) {
         return false;
       }
@@ -321,7 +321,7 @@ export const menu = () => {
 
     viewport.duration = (function () {
       var d = touch ? 50 : 500;
-      viewport.el.style[transitionDurationProp] = d + "ms";
+      viewport.el?.style[transitionDurationProp] = d + "ms";
       return d;
     })();
 
