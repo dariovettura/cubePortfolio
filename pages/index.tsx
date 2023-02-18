@@ -6,6 +6,10 @@ import { preloader } from '../utils/preloader';
 import 'aos/dist/aos.css';
 import Link from 'next/link';
 import Slider from "react-slick";
+import Menu from '../component/Menu';
+import Preloader from '../component/Preloader';
+import About from '../component/About';
+import Contacts from '../component/Contacts';
 
 
 
@@ -17,107 +21,12 @@ interface Props {
 
 const Casa: NextPage<Props> = ({ }) => {
 
-  const setting = {
-    arrows: false,
-    dots: false,
-    autoplay: true,
-    slidesToShow: 1,
-    autoplaySpeed: 1000,
-    slidesToScroll: 1,
-    pauseOnHover: false,
-    pauseOnFocus: false,
-  }
+
 
 
   return (<>
     <div className="root">
-      <div className="demo-32">
-        <div className="main2 main--demo-32">
-          <div className="content2 content--demo-32">
-            <div className="global-menu2">
-              <div className="global-menu__wrap2">
-                <div
-                  className="global-menu__item2 global-menu__item--demo-32 is-opened"
-                >
-                  <div>
-                    <article className="viewport2">
-                      <section className="cube2 rotating2">
-                        <div>
-                          <div className="container-fluid">
-                            <div className="row text-center">
-                              <div className="col-12"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div>
-                          <div className="container-fluid">
-                            <div className="row text-center">
-                              <div className="col-12">
-                                <h2 data-aos="fade-in" data-aos-delay="1800">
-                                  D<span>.</span>
-                                </h2>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div>
-                          <div className="container-fluid">
-                            <div className="row text-center">
-                              <div className="col-12"></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div>
-                          <div className="container-fluid">
-                            <div className="row text-center">
-                              <div className="col-12"></div>
-                            </div>
-                          </div>
-                        </div>
-
-
-                        <div>
-                          <div className="container-fluid">
-                            <div className="row text-center">
-                              <div className="col-12"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                      <section>
-                        <div className="container-fluid hero">
-                          <div className="row rigahero text-center">
-                            <div className="col-12 colhero">
-                              <h1>WEB DESIGN PORTFOLIO</h1>
-                              <h2>Dario Vettura</h2>
-                              <div
-                                id="ham2"
-                                className="hamburger2 hamburger--demo-32 js-hover"
-                              ></div>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* <svg
-            className="shape-overlays2"
-            viewBox="0 0 100 100"
-            preserveAspectRatio="none"
-          >
-            <path className="shape-overlays__path2"></path>
-            <path className="shape-overlays__path2"></path>
-            <path
-              className="shape-overlays__path2"
-              d="M 0 0 V 100 C 50 100 50 100 100 100 V 0 H 0"
-            ></path>
-          </svg> */}
-          </div>
-        </div>
-      </div>
+      <Preloader />
       <header className='header noVisible'>
         <div className="logo">
           <Link href="/"
@@ -125,161 +34,7 @@ const Casa: NextPage<Props> = ({ }) => {
             <h2>D<span>.</span></h2>
           </Link>
         </div>
-        <div className="demo-3">
-          <div className="main main--demo-3">
-            <div className="content content--demo-3">
-              <div id="ham" className="hamburger hamburger--demo-3 js-hover">
-                <div className="hamburger__line hamburger__line--01">
-                  <div className="hamburger__line-in hamburger__line-in--01"></div>
-                </div>
-                <div className="hamburger__line hamburger__line--02">
-                  <div className="hamburger__line-in hamburger__line-in--02"></div>
-                </div>
-                <div className="hamburger__line hamburger__line--03">
-                  <div className="hamburger__line-in hamburger__line-in--03"></div>
-                </div>
-                <div className="hamburger__line hamburger__line--cross01">
-                  <div
-                    className="hamburger__line-in hamburger__line-in--cross01"
-                  ></div>
-                </div>
-                <div className="hamburger__line hamburger__line--cross02">
-                  <div
-                    className="hamburger__line-in hamburger__line-in--cross02"
-                  ></div>
-                </div>
-              </div>
-              <div className="global-menu">
-                <div className="global-menu__wrap">
-                  <div className="global-menu__item global-menu__item--demo-3">
-                    <div>
-                      <article className="viewport nascosto">
-                        <section className="cube">
-                          <div>
-                            <div className="container-fluid">
-                              <div className="row text-center">
-                                <div className="col-12">
-                                  <h2><span></span></h2>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div>
-                            <div className="container-fluid">
-                              <div className="row text-center">
-                                <div className="col-12 log">
-                                  <Link href="#"
-                                    passHref={true}>
-                                    <h2>D<span>.</span></h2>
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div>
-                            <div className="container-fluid">
-                              <div className="row text-center">
-                                <div className="col-12">
-                                  <Link href="#works"
-                                    passHref={true}>
-                                    <h2 className="menulink1">WORKS<span>.</span></h2>
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div>
-                            <div className="container-fluid">
-                              <div className="row text-center">
-                                <div className="col-12">
-                                  <Link href="#about"
-                                    passHref={true}>
-                                    <h2 className="menulink2">ABOUT<span>.</span></h2>
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div>
-                            <div className="container-fluid">
-                              <div className="row text-center">
-                                <div className="col-12">
-                                  <Link href="#contacts"
-                                    passHref={true}>
-                                    <h2 className="menulink3">CONTACTS<span>.</span></h2>
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-
-                          <div>
-                            <div className="container-fluid">
-                              <div className="row text-center">
-                                <div className="col-12">
-                                  <h2><span></span></h2>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </section>
-                        <section>
-                          <div className="container-fluid menutext hero2 nascosto">
-                            <div className="row rigahero text-center">
-                              <div className="col-12 colhero">
-                                <h2>WEB DESIGN PORTFOLIO</h2>
-                                <h3>Dario Vettura</h3>
-                              </div>
-                            </div>
-                            <div
-                              className="row icone text-center justify-content-center"
-                            >
-                              <div className="col-3 col-lg-1">
-                                <Link
-                                  passHref={true}
-                                  href="https://mail.google.com/mail/?view=cm&source=mailto&to=d.vettura.wd@gmail.com"
-                                ><div className="icona2 face"></div></Link>
-                              </div>
-                              <div className="col-3 col-lg-1">
-                                <Link
-                                  // target="_blank"
-                                  href="http://m.me/dario.vettura"
-                                  passHref={true}
-                                >
-                                  <div className="icona2 insta">
-                                  </div >
-                                </Link>
-                              </div>
-                              <div className="col-3 col-lg-1">
-                                <Link
-                                  href="http://m.me/dario.vettura"
-                                  passHref={true}
-                                >
-                                  <div className="icona2 linkedin"></div></Link>
-                              </div>
-                              <div className="col-12 sottitolo2">
-                                <p>
-                                  © Dario Vettura 2020<span>.</span>
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </section>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="shape-overlays">
-                <path></path>
-                <path></path>
-                <path></path>
-              </div>
-
-            </div>
-          </div>
-        </div>
+        <Menu />
       </header>
       <div className='rooot noVisible'>
 
@@ -475,98 +230,8 @@ const Casa: NextPage<Props> = ({ }) => {
         </div>
       </div>
     </section> */}
-        <section id="about" className="web-site-main">
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col-12">
-                <h2 className="section-tit2">ABOUT<span>.</span></h2>
-              </div>
-            </div>
-          </div>
-
-          <div className="container-fluid">
-            <div className="row riga-title d-flex align-items-center">
-              <div className="col-lg-6">
-                <div className="container-fluid">
-                  <Slider className="row slaider"  {...setting}>
-                
-                    <div className="col-12 slid nerd"></div>
-                    <div className="col-12 slid barba"></div>
-                    <div className="col-12 slid mario"></div>
-                    <div className="col-12 slid goku"></div>
-              
-                  </Slider>
-                </div>
-              </div>
-              <div className="col-lg-6 title">
-                <h2 className="">Freelance Web Designer<span>.</span></h2>
-
-                <h2 className="orange">Training:</h2>
-                <p>
-                  Ilas graduate. Italian Academy of Visual Communication<span
-                  >.</span>
-                </p>
-
-                <h2 className="orange">Design for web:</h2>
-                <p>
-                  HTML5 / CSS3 / Responsive and Adaptive Design / jQuery / Bootstrap
-                  / SEO - Search Engine Optimization / Web research / Wordpress /
-                  Material handling / Color theory / Typography / Composition<span
-                  >.</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="contacts" className="web-site-main">
-          <div className="container-fluid" id="herogioco">
-            <div className="row justify-content-center" id="rigagioco">
-              <div className="col-12" id="colgioco">
-                <canvas id="bg"></canvas>
-                <canvas id="game"></canvas>
-              </div>
-              <div className="col-12" id="colgioco2"></div>
-            </div>
-            <div id="view"></div>
-          </div>
-          <div className="container-fluid">
-            <div className="row text-center">
-              <div className="col-12 titolo">
-                <h2>Let&apos;s talk <span>!</span></h2>
-              </div>
-              <div className="col-12 sottitolo">
-                <p>
-                  You can contact me where you prefer.Thank you for your
-                  attention<span>.</span>
-                </p>
-              </div>
-              <div className="col-12 sottitolo">
-                <div className="row icone justify-content-center">
-                  <div className="col-3 col-lg-1">
-                    <Link
-                      // target="_blank"
-                      href="https://mail.google.com/mail/?view=cm&source=mailto&to=d.vettura.wd@gmail.com"
-                      passHref={true}
-                    ><div className="icona gmail"></div></Link>
-                  </div>
-                  <div className="col-3 col-lg-1">
-                    <Link
-                      // target="_blank"
-                      href="http://m.me/dario.vettura"
-                      passHref={true}>
-
-                      <div className="icona messenger"></div></Link>
-                  </div>
-                  <div className="col-3 col-lg-1 icona wazup"></div>
-                </div>
-              </div>
-
-              <div className="col-12 sottitolo">
-                <p>© Dario Vettura 2020<span>.</span></p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <About />
+        <Contacts />
       </div>
     </div>
   </>)
