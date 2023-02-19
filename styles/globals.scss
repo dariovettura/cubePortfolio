@@ -550,6 +550,7 @@
  }
  
  .card-list {
+  padding: 20px;
    display: flex;
    flex-wrap: wrap;
    align-content: flex-start;
@@ -607,7 +608,7 @@
    width: 100%;
    height: 100%;
    margin: 0 auto;
-   box-shadow: 5px 5px 1px #fff;
+   box-shadow: 4px 4px 0px #ff8800;
  }
  
  .open .card-content {

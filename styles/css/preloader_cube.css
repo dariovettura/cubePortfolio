@@ -71,6 +71,12 @@
     line-height: 1em;
     color: #fff;
     border: 10px solid #fff;
+    box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #ff8800,
+            0 0 0.8rem #ff8800,
+            0 0 2.8rem #ff8800,
+            inset 0 0 1.3rem #ff8800; 
     border-radius: 3px;
 }
 
