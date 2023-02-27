@@ -48,6 +48,7 @@ const Casa: NextPage<Props> = ({ posts }) => {
 
 
   return (<>
+  
     <div className="root">
       <Preloader />
       <header className='header noVisible'>

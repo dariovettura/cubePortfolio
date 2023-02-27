@@ -541,6 +541,25 @@ a {
 //    height: 40px;
 //  }
 
+.glass{
+width: 200vw;
+height: 200vh;
+position: fixed;
+z-index: 4;
+background: rgba(0, 0, 0, 0.7);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+opacity: 0;
+pointer-events: none;
+transition: opacity 1s;
+
+}
+.glassVisible{
+  opacity: 1;
+    transition: opacity 1s;
+}
+
 ul,
 li {
   list-style: none;
@@ -715,7 +734,10 @@ h2 {
 .overlay {
   z-index: 4;
   position: fixed;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   will-change: opacity;
   top: 0;
   bottom: 0;

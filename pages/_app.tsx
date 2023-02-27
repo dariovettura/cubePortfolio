@@ -51,6 +51,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 
     {/* <AnimatePresence exitBeforeEnter > */}
     <AnimateSharedLayout>
+    <div className="glass"></div>
       <Component key={router.route} {...pageProps} />
     {/* </AnimatePresence> */}
     </AnimateSharedLayout>

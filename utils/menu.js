@@ -118,17 +118,17 @@ export const menu = () => {
     const cubo = document.querySelector(".cube");
     const view = document.querySelector(".viewport");
     const menutext = document.querySelector(".menutext");
-    const rooot = document.querySelectorAll(".rooot");
+    const rooot = document.querySelectorAll(".glass");
 
     const removeRooot = () => {
       for (var i = 0; i < rooot.length; i++) {
-        rooot[i].classList.remove("noVisible");
+        rooot[i].classList.remove("glassVisible");
       }
     };
 
     const addRooot = () => {
       for (var i = 0; i < rooot.length; i++) {
-        rooot[i].classList.add("noVisible");
+        rooot[i].classList.add("glassVisible");
       }
     };
 
