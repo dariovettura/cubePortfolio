@@ -21,7 +21,7 @@ interface Props {
 
 }
 
-const Card: React.FC<Props> = ({ id, title, category, theme, isSelected, item }) => {
+export const Card: React.FC<Props> = ({ id, title, category, theme, isSelected, item }) => {
 
 
   return (

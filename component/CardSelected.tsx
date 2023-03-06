@@ -9,6 +9,7 @@ import { useWheelScroll } from "../utils/use-wheel-scroll";
 import { useAppSelector } from "../store/hooks";
 import { cartSelector } from "../store/cart.slice";
 import Video from "./Video";
+import Home, { Card } from "./Home";
 
 interface Props {
   id?: any,
@@ -128,10 +129,9 @@ export const CardSelected: React.FC<Props> = ({ id, isSelected = true, history }
 
           <motion.div className="content-container" animate dangerouslySetInnerHTML={{ __html: item?.content.rendered }} />
 
-
-
         </motion.div>
         {/* <div ref={bottom}></div> */}
+     
       </div>
       {/* </div> */}
 
