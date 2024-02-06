@@ -7,6 +7,7 @@ import Video from "./Video";
 import { useAppSelector } from "../store/hooks";
 import { cartSelector } from "../store/cart.slice";
 import { game } from "../utils/game";
+import { works } from "../constants/work";
 
 
 interface Props {
@@ -32,7 +33,7 @@ export const Card: React.FC<Props> = ({ id, title, category, theme, isSelected, 
             className="card-image-container"
             layoutId={`card-image-container-${item?.id}`}
           >
-            <img className="card-image" src={item?.acf?.anteprima} alt="" />
+            <img className="card-image" src={item?.anteprima} alt="" />
             <div className="img-overlay"></div>
           </motion.div>
           <motion.div
@@ -40,10 +41,10 @@ export const Card: React.FC<Props> = ({ id, title, category, theme, isSelected, 
             layoutId={`title-container-${item?.id}`}
           >
             <span className="category">
-              {item?._embedded["wp:term"][0][0].name}
+              {item?.category}
             </span>
 
-            <h2 className="title">{item?.title.rendered}</h2>
+            <h2 className="title">{item?.title}</h2>
 
           </motion.div>
         </motion.div>
@@ -58,23 +59,30 @@ export const Card: React.FC<Props> = ({ id, title, category, theme, isSelected, 
 }
 
 const Home: React.FC<Props> = ({ video }) => {
-  const { data } = useAppSelector(cartSelector)
-  console.log(data)
+
 
   React.useEffect(() => {
     const contenuto = document.querySelector("body");
     contenuto?.classList.remove("overflow-hidden");
   }, [])
 
- 
-  return (
 
+
+  return (<section id="work" style={{ paddingTop: '60px' }}>
+    <h2 className="section-tit2">Work<span>.</span></h2>
+    <h4 className="">Projects in <a href="https://www.linkedin.com/in/dario-vettura-347ba51b2/" >Freelancing</a></h4>
     <ul className="card-list">
-      {data.map(item => (
+      {works.filter(el => el.type === "dario").map(item => (
         <Card key={item.id} item={item} />
       ))}
     </ul>
-
+    <h4 className="">Working with <a href="https://www.arsdigitalia.net/it/" >Ars Digitalia</a></h4>
+    <ul className="card-list">
+      {works.filter(el => el.type === "ars").map(item => (
+        <Card key={item.id} item={item} />
+      ))}
+    </ul>
+  </section>
   );
 }
 

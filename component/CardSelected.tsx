@@ -10,6 +10,7 @@ import { useAppSelector } from "../store/hooks";
 import { cartSelector } from "../store/cart.slice";
 import Video from "./Video";
 import Home, { Card } from "./Home";
+import {works} from "../constants/work"
 
 interface Props {
   id?: any,
@@ -21,16 +22,16 @@ interface Props {
 
 
 export const CardSelected: React.FC<Props> = ({ id, isSelected = true, history }) => {
-  const { data } = useAppSelector(cartSelector)
+
   // const [item,setItem] = React.useState(data.find(item => item.id === parseInt(id)))
-  const item = data.find(item => item.id === parseInt(id));
+  const item = works.find(item => item.id === parseInt(id));
   const [bottom, inViewBottom] = useInView({
     threshold: 1,
   })
   const [top, inViewTop] = useInView({
     threshold: 1,
   })
-  console.log(item, data, id)
+
 
   const router = useRouter();
 
@@ -113,7 +114,7 @@ export const CardSelected: React.FC<Props> = ({ id, isSelected = true, history }
             className="card-image-container"
             layoutId={`card-image-container-${item?.id}`}
           >
-            <img className="card-image" src={item?.acf?.anteprima} alt="" />
+            <img className="card-image" src={item?.anteprima} alt="" />
             <div className="img-overlay"></div>
           </motion.div>
           <motion.div
@@ -121,13 +122,17 @@ export const CardSelected: React.FC<Props> = ({ id, isSelected = true, history }
             layoutId={`title-container-${item?.id}`}
           >
             <span className="category">
-              {item?._embedded["wp:term"][0][0].name}
+              {item?.category}
             </span>
 
-            <h2 className="title">{item?.title.rendered}</h2>
+            <h2 className="title">{item?.title}</h2>
           </motion.div>
 
-          <motion.div className="content-container" animate dangerouslySetInnerHTML={{ __html: item?.content.rendered }} />
+          <motion.div className="content-container" animate >
+            <p>{item?.content}</p>
+            <a href={item.linkContent}> {item.linkContent}</a>
+             </motion.div>
+          <motion.div className="content-container" animate > {item?.content}</motion.div>
 
         </motion.div>
         {/* <div ref={bottom}></div> */}

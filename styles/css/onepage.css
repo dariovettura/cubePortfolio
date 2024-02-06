@@ -31,7 +31,7 @@ body {
   z-index: 97;
 }
 h2 span {
-  color: #ff8800;
+  color: hsl(32, 100%, 51%);
   font-family: 'Archivo Black', sans-serif;
 }
 

@@ -508,11 +508,14 @@
 //  }
 
 h1 {
+
   font-weight: bold;
   color: white;
   margin: 6px 0 12px;
 }
 a {
+  position: relative;
+  z-index: 4;
   color: #ff8800;
 }
 .date {
@@ -720,6 +723,10 @@ li {
 h2 {
   color: #fff;
   margin: 8px 0;
+}
+h3, h4  {
+  color: #fff;
+
 }
 
 .category {
