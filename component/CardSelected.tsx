@@ -135,8 +135,8 @@ export const CardSelected: React.FC<Props> = ({ id, isSelected = true, history }
             className="card-image-container"
             layoutId={`card-image-container-${item?.id}`}
           >
-            <Image layout="fill" placeholder="blur"
-										blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`} className="card-image" src={item?.anteprima} alt="" />
+            <img  placeholder="blur"
+				 className="card-image" src={item?.anteprima} alt="" />
             <div className="img-overlay"></div>
           </motion.div>
           <motion.div
