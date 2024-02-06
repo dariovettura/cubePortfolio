@@ -348,6 +348,7 @@ video {
 	.log h2{font-size: 5em !important}
 	h2.section-tit{ padding-left: 20%;font-size: 3em}
 h2.section-tit2{ padding-left: 20%;font-size: 3em }
+.subtit{ padding-left: 20%; }
   #posts {
     padding-left: 30%;
     padding-right: 30%

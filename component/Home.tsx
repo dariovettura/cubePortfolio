@@ -8,6 +8,7 @@ import { useAppSelector } from "../store/hooks";
 import { cartSelector } from "../store/cart.slice";
 import { game } from "../utils/game";
 import { works } from "../constants/work";
+import Image from "next/image";
 
 
 interface Props {
@@ -24,7 +25,25 @@ interface Props {
 
 export const Card: React.FC<Props> = ({ id, title, category, theme, isSelected, item }) => {
 
-
+  const shimmer = (w: number, h: number) => `
+  <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <linearGradient id="g">
+        <stop stop-color="#333" offset="20%" />
+        <stop stop-color="#222" offset="50%" />
+        <stop stop-color="#333" offset="70%" />
+      </linearGradient>
+    </defs>
+    <rect width="${w}" height="${h}" fill="#333" />
+    <rect id="r" width="${w}" height="${h}" fill="url(#g)" />
+    <animate xlink:href="#r" attributeName="x" from="-${w}" to="${w}" dur="1s" repeatCount="indefinite"  />
+  </svg>`
+  
+    const toBase64 = (str: string) =>
+      typeof window === 'undefined'
+        ? Buffer.from(str).toString('base64')
+        : window.btoa(str)
+  
   return (
     <li className={`cardd`}>
       <div className="card-content-container">
@@ -33,7 +52,10 @@ export const Card: React.FC<Props> = ({ id, title, category, theme, isSelected, 
             className="card-image-container"
             layoutId={`card-image-container-${item?.id}`}
           >
-            <img className="card-image" src={item?.anteprima} alt="" />
+            <Image className="card-image" 
+             placeholder="blur"
+             blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
+            src={item?.anteprima} layout="fill" alt="" />
             <div className="img-overlay"></div>
           </motion.div>
           <motion.div
@@ -70,13 +92,13 @@ const Home: React.FC<Props> = ({ video }) => {
 
   return (<section id="work" style={{ paddingTop: '60px' }}>
     <h2 className="section-tit2">Work<span>.</span></h2>
-    <h4 className="">Projects in <a href="https://www.linkedin.com/in/dario-vettura-347ba51b2/" >Freelancing</a></h4>
+    <h4 className="subtit">Projects in <a href="https://www.linkedin.com/in/dario-vettura-347ba51b2/" >Freelancing</a></h4>
     <ul className="card-list">
-      {works.filter(el => el.type === "dario").map(item => (
+      {works.filter(el => el.type === "dario").map(item => ( 
         <Card key={item.id} item={item} />
       ))}
     </ul>
-    <h4 className="">Working with <a href="https://www.arsdigitalia.net/it/" >Ars Digitalia</a></h4>
+    <h4 className="subtit">Working with <a href="https://www.arsdigitalia.net/it/" >Ars Digitalia</a></h4>
     <ul className="card-list">
       {works.filter(el => el.type === "ars").map(item => (
         <Card key={item.id} item={item} />

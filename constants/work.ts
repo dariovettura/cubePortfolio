@@ -5,7 +5,7 @@ import React from 'react';
 export const works: any[] = [
   {
     id: 1,
-    anteprima: "img/3dSolution.png",
+    anteprima: "/img/3dSolution.png",
     category: "Wordpress",
     type:"ars",
     title: "3d Solution",
@@ -15,7 +15,7 @@ export const works: any[] = [
   },
   {
     id: 2,
-    anteprima: "img/tammaro.png",
+    anteprima: "/img/tammaro.png",
     category: "Wordpress",
     type:"ars",
     title: "Tammaro Metalli",
@@ -25,7 +25,7 @@ export const works: any[] = [
   },
   {
     id: 3,
-    anteprima: "img/excelsior.png",
+    anteprima: "/img/excelsior.png",
     category: "Wordpress",
     type:"ars",
     title: "Excelsior Ischia",
@@ -35,7 +35,7 @@ export const works: any[] = [
   },
   {
     id: 4,
-    anteprima: "img/grifo.png",
+    anteprima: "/img/grifo.png",
     category: "Wordpress",
     type:"ars",
     title: "Grifo Hotel",
@@ -45,7 +45,7 @@ export const works: any[] = [
   },
   {
     id: 5,
-    anteprima: "img/continental.png",
+    anteprima: "/img/continental.png",
     category: "Wordpress",
     type:"ars",
     title: "Continental Ischia",
@@ -55,7 +55,7 @@ export const works: any[] = [
   },
   {
     id: 6,
-    anteprima: "img/mare.png",
+    anteprima: "/img/mare.png",
     category: "Wordpress",
     type:"ars",
     title: "Continental Mare",
@@ -65,7 +65,7 @@ export const works: any[] = [
   },
   {
     id: 7,
-    anteprima: "img/moresco.png",
+    anteprima: "/img/moresco.png",
     category: "Wordpress",
     type:"ars",
     title: "Il Moresco",
@@ -75,7 +75,7 @@ export const works: any[] = [
   },
   {
     id: 8,
-    anteprima: "img/tesoro.png",
+    anteprima: "/img/tesoro.png",
     category: "Wordpress",
     type:"ars",
     title: "Il Tesoro Suite",
@@ -86,7 +86,7 @@ export const works: any[] = [
   },
   {
     id: 9,
-    anteprima: "img/raccoon.gif",
+    anteprima: "/img/raccoon.gif",
     category: "React",
     type:"dario",
     title: "Raccoon Fantasy",
@@ -96,7 +96,7 @@ export const works: any[] = [
   },
   {
     id: 10,
-    anteprima: "img/rispet.gif",
+    anteprima: "/img/rispet.gif",
     category: "Shopify",
     type:"dario",
     title: "Rishpet",
@@ -106,7 +106,7 @@ export const works: any[] = [
   },
   {
     id: 11,
-    anteprima: "img/beer.gif",
+    anteprima: "/img/beer.gif",
     category: "React",
     type:"dario",
     title: "Beer Garden",
@@ -116,7 +116,7 @@ export const works: any[] = [
   },
   {
     id: 12,
-    anteprima: "img/paolo.gif",
+    anteprima: "/img/paolo.gif",
     category: "Next js",
     type:"dario",
     title: "Paolo Minopoli",
