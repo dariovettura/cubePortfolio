@@ -21,6 +21,7 @@ import Preloader from '../component/Preloader';
 import Link from 'next/link';
 import Menu from '../component/Menu';
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 
 
@@ -49,6 +50,28 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           rel="stylesheet"
         />
     </Head>
+    <NextSeo
+      title='Portfolio'
+      titleTemplate='Dario Vettura | %s'
+      defaultTitle="Dario Vettura"
+      description="WEB DEV"
+      canonical="https://dariovettura.vercel.app/"
+      openGraph={{
+        type: 'website',
+        url: "https://dariovettura.vercel.app/",
+        title: "Paolo Minopoli",
+        description: "WEB DEV",
+        images: [
+          {
+            width: 400,
+            height: 400,
+            url: "https://dariovettura.vercel.app/vett7.png",
+            alt: "Dario Vettura",
+          },
+        ],
+      }}
+
+    />
     <AnimatePresence exitBeforeEnter >
       <div className="glass glassVisible"></div>
       <Preloader />
