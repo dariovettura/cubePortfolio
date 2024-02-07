@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       menu();
       preloader();
       game();
-      // main();
+    
     }
 
   }, [])

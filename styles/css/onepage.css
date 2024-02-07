@@ -29,6 +29,7 @@ body {
   margin: 0;
   color: #fff;
   z-index: 97;
+  cursor: pointer;
 }
 h2 span {
   color: hsl(32, 100%, 51%);
@@ -56,6 +57,7 @@ h2.section-tit2{ font-family: 'Archivo Black', sans-serif;font-size: 2.5em;}
 .cube2 h2 {
   font-family: 'Archivo Black', sans-serif;
   font-size: 300px;
+  cursor: pointer;
 }
 .hero,.hero2{margin-top: 100px}
 .hero h1,.hero2 h2{

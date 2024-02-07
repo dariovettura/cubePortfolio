@@ -49,7 +49,7 @@ export const works: any[] = [
     category: "Wordpress",
     type:"ars",
     title: "Continental Ischia",
-    content:"work on custom functionality, plugin and templating on a custom theme." ,
+    content:"<p className='subtit'>Work of <a href='https://www.arsdigitalia.net/it/'>Ars Digitalia</a></p><p> Custom functionality, plugin and templating on a custom theme.</p>" ,
     linkContent:"https://www.hotelcontinentalischia.it"
     
   },
