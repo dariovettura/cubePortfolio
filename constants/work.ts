@@ -8,7 +8,7 @@ export const works: any[] = [
     type: "ars",
     title: "3d Solution",
     content:
-      "<p className='subtit'>Work of <a href='https://www.arsdigitalia.net/it/'>Ars Digitalia</a></p><p> Custom functionality, plugin and templating on a custom theme.</p>",
+      "<p> Custom functionality, plugin and templating on a custom theme.</p>",
     linkContent: "https://www.3dsolution.it",
   },
   {
