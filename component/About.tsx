@@ -38,7 +38,7 @@ function About(props:any) {
           </div>
         </div>
         <div className="col-lg-6 title">
-          <h2 className="">Freelance Web Designer<span>.</span></h2>
+          <h2 className="">Freelance Web Develeper<span>.</span></h2>
 
           <h2 className="orange">Training:</h2>
           <p>
@@ -48,8 +48,8 @@ function About(props:any) {
 
           <h2 className="orange">Design for web:</h2>
           <p>
-            HTML5 / CSS3 / Responsive and Adaptive Design / jQuery / Bootstrap
-            / SEO - Search Engine Optimization / Web research / Wordpress /
+           Typescript / PHP / SASS / REACT/  Responsive and Adaptive Design / jQuery / Bootstrap
+            / SEO - Search Engine Optimization / Wordpress /
             Material handling / Color theory / Typography / Composition<span
             >.</span>
           </p>

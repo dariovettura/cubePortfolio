@@ -106,7 +106,7 @@ function Menu(props:any) {
                     <div className="container-fluid menutext hero2 nascosto">
                       <div className="row rigahero text-center">
                         <div className="col-12 colhero">
-                          <h2>WEB DESIGN PORTFOLIO</h2>
+                          <h2>WEB DEV PORTFOLIO</h2>
                           <h3>Dario Vettura</h3>
                         </div>
                       </div>

@@ -129,7 +129,7 @@ class ShapeOverlays2 {
 (function() {
   const elmHamburger2 = document.querySelector('.hamburger2');
   const gNavItems2 = document.querySelectorAll('.global-menu__item2');
-  const rooot = document.querySelectorAll('.rooot');
+  const rooot = document.querySelectorAll('.glass');
   const header = document.querySelectorAll('.header');
   const elmOverlay2 = document.querySelector('.shape-overlays2');
   const bodys2 = document.querySelector('body');
@@ -146,9 +146,9 @@ class ShapeOverlays2 {
     setTimeout( () => { 
       // overlay2.toggle();
        for (var i = 0; i < rooot.length; i++) {
-        rooot[i].classList.remove('noVisible'); };
+        rooot[i].classList.remove('glassVisible'); };
         for (var i = 0; i < header.length; i++) {
-          header[i].classList.remove('noVisible'); }
+          header[i].classList.remove('glassVisible'); }
   },2000)
   }
 

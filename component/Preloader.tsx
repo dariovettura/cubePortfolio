@@ -59,7 +59,7 @@ function Preloader(props:any) {
                     <div className="container-fluid hero">
                       <div className="row rigahero text-center">
                         <div className="col-12 colhero">
-                          <h1>WEB DESIGN PORTFOLIO</h1>
+                          <h1>WEB DEV PORTFOLIO</h1>
                           <h2>Dario Vettura</h2>
                           <div
                             id="ham2"

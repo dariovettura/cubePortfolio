@@ -639,7 +639,7 @@ li {
 }
 
 .card-open-link {
-  position: absolute;
+  // position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -647,7 +647,7 @@ li {
   z-index: 3;
 }
 .img-overlay {
-  position: absolute;
+  // position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
@@ -655,7 +655,7 @@ li {
   background: linear-gradient(-10deg, transparent 76%, #000 117%, #000 0);
 }
 .card-image-container {
-  position: absolute;
+  // position: absolute;
   top: 0;
   left: 0;
   padding: 5px;
