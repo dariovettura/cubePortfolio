@@ -104,13 +104,12 @@ const Home: React.FC<Props> = ({ video }) => {
       {works.filter(el => el.type === "dario").map(item => (
         <Card key={item.id} item={item} />
       ))}
-    </ul>
-
-    <ul className="card-list">
-      {works.filter(el => el.type === "ars").map(item => (
+       {works.filter(el => el.type === "ars").map(item => (
         <Card key={item.id} item={item} />
       ))}
     </ul>
+
+  
   </section>
   );
 }
