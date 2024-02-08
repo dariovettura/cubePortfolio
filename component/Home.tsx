@@ -1,11 +1,6 @@
 import React, { useEffect } from "react";
-
 import Link from 'next/link'
 import { motion } from "framer-motion";
-import { GetStaticPropsResult } from "next";
-import Video from "./Video";
-import { useAppSelector } from "../store/hooks";
-import { cartSelector } from "../store/cart.slice";
 import { game } from "../utils/game";
 import { works } from "../constants/work";
 import Image from "next/image";
@@ -90,10 +85,6 @@ const Home: React.FC<Props> = ({ video }) => {
     }
 
   }, [])
-  // React.useEffect(() => {
-  //   const contenuto = document.querySelector("body");
-  //   contenuto?.classList.remove("overflow-hidden");
-  // }, [])
 
 
 

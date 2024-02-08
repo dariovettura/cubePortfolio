@@ -59,7 +59,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       openGraph={{
         type: 'website',
         url: "https://dariovettura.vercel.app/",
-        title: "Paolo Minopoli",
+        title: "Dario Vettura",
         description: "WEB DEV",
         images: [
           {

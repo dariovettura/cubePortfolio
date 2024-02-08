@@ -1,16 +1,12 @@
 
-import { AnimatePresence, motion } from 'framer-motion'
-import Link from 'next/link'
+import { motion } from 'framer-motion'
 import { useRouter } from 'next/router'
 import React, { useEffect } from 'react'
-import { CardSelected } from '../component/CardSelected'
 import Contacts from '../component/Contacts'
 import Home from '../component/Home'
-import Menu from '../component/Menu'
 import { game } from '../utils/game'
 import Image from 'next/image'
 import { works } from "../constants/work"
-import Preloader from '../component/Preloader'
 import About from '../component/About'
 import { menu } from '../utils/menu'
 import { preloader } from '../utils/preloader'
@@ -60,7 +56,6 @@ const Post = () => {
           blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
           placeholder="blur"
           src={item?.anteprima || "/"} alt="" />
-
       </motion.div>
     </div>
     <span className="category">
@@ -69,10 +64,10 @@ const Post = () => {
     <h2 className="title">{item?.title}</h2>
 
     <motion.div className="content-container" animate >
-      <p dangerouslySetInnerHTML={{ __html: item?.content }}/>
+      <p dangerouslySetInnerHTML={{ __html: item?.content }} />
       <a href={item?.linkContent}> {item?.linkContent}</a>
     </motion.div>
-  
+
 
 
     <Home />
