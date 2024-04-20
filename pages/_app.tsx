@@ -72,10 +72,10 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 
     />
     <AnimatePresence exitBeforeEnter >
-      <div className="glass glassVisible"></div>
+      <div className="glass "></div>
       <div className="background"></div>
       {/* <Preloader /> */}
-      <Wall/>
+      {/* <Wall/> */}
       <header className='header'>
         <div className="logo">
           <Link href="/"
