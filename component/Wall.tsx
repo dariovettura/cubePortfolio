@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import { motion } from "framer-motion";
 
 function Wall(props: any) {
 
@@ -31,17 +32,17 @@ function Wall(props: any) {
         this.isAnimating = false;
       }
 
-      toggle(): void {
-        this.isAnimating = true;
-        for (let i = 0; i < this.numPoints; i++) {
-          this.delayPointsArray[i] = 0;
-        }
-        if (this.isOpened === false) {
-          this.open();
-        } else {
-          this.close();
-        }
-      }
+      // toggle(): void {
+      //   this.isAnimating = true;
+      //   for (let i = 0; i < this.numPoints; i++) {
+      //     this.delayPointsArray[i] = 0;
+      //   }
+      //   if (this.isOpened === false) {
+      //     this.open();
+      //   } else {
+      //     this.close();
+      //   }
+      // }
 
       open(): void {
         this.isOpened = true;
@@ -132,7 +133,7 @@ function Wall(props: any) {
 
 
     (function () {
-      console.log("ciao")
+   
       const elmHamburger: any = document.querySelector(".hamburger");
       const menulink1: any = document.querySelector(".menulink1");
       const menulink2: any = document.querySelector(".menulink2");
@@ -162,96 +163,96 @@ function Wall(props: any) {
       const elmOverlay: any = document.querySelector(".shape-overlays");
       const overlay: any = new ShapeOverlays(elmOverlay);
 
-      elmHamburger?.addEventListener("click", () => {
-        if (overlay.isAnimating) {
-          return false;
-        }
-        overlay.toggle();
-        if (overlay.isOpened === true) {
-          elmHamburger?.classList.add("is-opened-navi");
-          bodys.classList.add("overflows");
-          cubo.classList.add("rotating");
-          view.classList.remove("nascosto");
-          menutext.classList.remove("nascosto");
-          addRooot();
+      // elmHamburger?.addEventListener("click", () => {
+      //   if (overlay.isAnimating) {
+      //     return false;
+      //   }
+      //   overlay.toggle();
+      //   if (overlay.isOpened === true) {
+      //     elmHamburger?.classList.add("is-opened-navi");
+      //     bodys.classList.add("overflows");
+      //     // cubo.classList.add("rotating");
+      //     view.classList.remove("nascosto");
+      //     menutext.classList.remove("nascosto");
+      //     addRooot();
 
-          for (var i = 0; i < gNavItems.length; i++) {
-            gNavItems[i].classList.add("is-opened");
-          }
-        } else {
-          elmHamburger.classList.remove("is-opened-navi");
-          bodys.classList.remove("overflows");
-          cubo.classList.remove("rotating");
-          removeRooot();
+      //     for (var i = 0; i < gNavItems.length; i++) {
+      //       gNavItems[i].classList.add("is-opened");
+      //     }
+      //   } else {
+      //     elmHamburger.classList.remove("is-opened-navi");
+      //     bodys.classList.remove("overflows");
+      //     cubo.classList.remove("rotating");
+      //     removeRooot();
 
-          for (var i = 0; i < gNavItems.length; i++) {
-            gNavItems[i].classList.remove("is-opened");
-          }
-        }
-      });
-      menulink1?.addEventListener("click", () => {
-        if (overlay.isAnimating) {
-          return false;
-        }
-        overlay.toggle();
-        if (overlay.isOpened === true) {
-          elmHamburger.classList.add("is-opened-navi");
-          bodys.classList.add("overflows");
-          addRooot();
-          for (var i = 0; i < gNavItems.length; i++) {
-            gNavItems[i].classList.add("is-opened");
-          }
-        } else {
-          elmHamburger.classList.remove("is-opened-navi");
-          bodys.classList.remove("overflows");
-          removeRooot();
-          for (var i = 0; i < gNavItems.length; i++) {
-            gNavItems[i].classList.remove("is-opened");
-          }
-        }
-      });
-      menulink2?.addEventListener("click", () => {
-        if (overlay.isAnimating) {
-          return false;
-        }
-        overlay.toggle();
-        if (overlay.isOpened === true) {
-          elmHamburger.classList.add("is-opened-navi");
-          bodys.classList.add("overflows");
-          addRooot();
-          for (var i = 0; i < gNavItems.length; i++) {
-            gNavItems[i].classList.add("is-opened");
-          }
-        } else {
-          elmHamburger.classList.remove("is-opened-navi");
-          bodys.classList.remove("overflows");
-          removeRooot();
-          for (var i = 0; i < gNavItems.length; i++) {
-            gNavItems[i].classList.remove("is-opened");
-          }
-        }
-      });
-      menulink3?.addEventListener("click", () => {
-        if (overlay.isAnimating) {
-          return false;
-        }
-        overlay.toggle();
-        if (overlay.isOpened === true) {
-          elmHamburger.classList.add("is-opened-navi");
-          bodys.classList.add("overflows");
-          addRooot();
-          for (var i = 0; i < gNavItems.length; i++) {
-            gNavItems[i].classList.add("is-opened");
-          }
-        } else {
-          elmHamburger.classList.remove("is-opened-navi");
-          bodys.classList.remove("overflows");
-          removeRooot();
-          for (var i = 0; i < gNavItems.length; i++) {
-            gNavItems[i].classList.remove("is-opened");
-          }
-        }
-      });
+      //     for (var i = 0; i < gNavItems.length; i++) {
+      //       gNavItems[i].classList.remove("is-opened");
+      //     }
+      //   }
+      // });
+      // menulink1?.addEventListener("click", () => {
+      //   if (overlay.isAnimating) {
+      //     return false;
+      //   }
+      //   overlay.toggle();
+      //   if (overlay.isOpened === true) {
+      //     elmHamburger.classList.add("is-opened-navi");
+      //     bodys.classList.add("overflows");
+      //     addRooot();
+      //     for (var i = 0; i < gNavItems.length; i++) {
+      //       gNavItems[i].classList.add("is-opened");
+      //     }
+      //   } else {
+      //     elmHamburger.classList.remove("is-opened-navi");
+      //     bodys.classList.remove("overflows");
+      //     removeRooot();
+      //     for (var i = 0; i < gNavItems.length; i++) {
+      //       gNavItems[i].classList.remove("is-opened");
+      //     }
+      //   }
+      // });
+      // menulink2?.addEventListener("click", () => {
+      //   if (overlay.isAnimating) {
+      //     return false;
+      //   }
+      //   overlay.toggle();
+      //   if (overlay.isOpened === true) {
+      //     elmHamburger.classList.add("is-opened-navi");
+      //     bodys.classList.add("overflows");
+      //     addRooot();
+      //     for (var i = 0; i < gNavItems.length; i++) {
+      //       gNavItems[i].classList.add("is-opened");
+      //     }
+      //   } else {
+      //     elmHamburger.classList.remove("is-opened-navi");
+      //     bodys.classList.remove("overflows");
+      //     removeRooot();
+      //     for (var i = 0; i < gNavItems.length; i++) {
+      //       gNavItems[i].classList.remove("is-opened");
+      //     }
+      //   }
+      // });
+      // menulink3?.addEventListener("click", () => {
+      //   if (overlay.isAnimating) {
+      //     return false;
+      //   }
+      //   overlay.toggle();
+      //   if (overlay.isOpened === true) {
+      //     elmHamburger.classList.add("is-opened-navi");
+      //     bodys.classList.add("overflows");
+      //     addRooot();
+      //     for (var i = 0; i < gNavItems.length; i++) {
+      //       gNavItems[i].classList.add("is-opened");
+      //     }
+      //   } else {
+      //     elmHamburger.classList.remove("is-opened-navi");
+      //     bodys.classList.remove("overflows");
+      //     removeRooot();
+      //     for (var i = 0; i < gNavItems.length; i++) {
+      //       gNavItems[i].classList.remove("is-opened");
+      //     }
+      //   }
+      // });
     })();
 
     //
@@ -471,8 +472,10 @@ function Wall(props: any) {
           <div className="global-menu">
             <div className="global-menu__wrap">
               <div className="global-menu__item global-menu__item--demo-3 is-opened">
-                <div>
+                <div >
+                  <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ velocity: 3 ,delay: 2,}}>
                   <article className="viewport nascostos">
+                   
                     <section className="cube rotating">
                       <div>
                         <div className="container-fluid">
@@ -484,16 +487,17 @@ function Wall(props: any) {
                         </div>
                       </div>
                       <div>
-                        <div className="container-fluid">
+                      <div className="container-fluid">
                           <div className="row text-center">
-                            <div className="col-12 log">
-                              <Link href="#"
+                            <div className="col-12">
+                              <Link href="#about"
                                 passHref={true}>
-                                <h2>D<span>.</span></h2>
+                                <h2 className="menulink2">ABOUT<span>.</span></h2>
                               </Link>
                             </div>
                           </div>
                         </div>
+                       
                       </div>
                       <div>
                         <div className="container-fluid">
@@ -508,12 +512,12 @@ function Wall(props: any) {
                         </div>
                       </div>
                       <div>
-                        <div className="container-fluid">
+                      <div className="container-fluid">
                           <div className="row text-center">
-                            <div className="col-12">
-                              <Link href="#about"
+                            <div className="col-12 log">
+                              <Link href="#"
                                 passHref={true}>
-                                <h2 className="menulink2">ABOUT<span>.</span></h2>
+                                <h2>D<span>.</span></h2>
                               </Link>
                             </div>
                           </div>
@@ -543,7 +547,11 @@ function Wall(props: any) {
                         </div>
                       </div>
                     </section>
-                    <section>
+                 
+                  
+                  </article>
+                  </motion.div>
+                  <section className=''>
                       <div className="container-fluid menutext hero2 nascostos">
                         <div className="row rigahero text-center">
                           <div className="col-12 colhero">
@@ -551,16 +559,17 @@ function Wall(props: any) {
                             <h3>Dario Vettura</h3>
                           </div>
                         </div>
+                       
                         <div
                           className="row icone text-center justify-content-center"
                         >
-                          <div className="col-3 col-lg-1">
+                          <div className="col-3 ">
                             <Link
                               passHref={true}
                               href="https://mail.google.com/mail/?view=cm&source=mailto&to=d.vettura.wd@gmail.com"
                             ><div className="icona2 face"></div></Link>
                           </div>
-                          <div className="col-3 col-lg-1">
+                          <div className="col-3 ">
                             <Link
                               // target="_blank"
                               href="http://m.me/dario.vettura"
@@ -570,7 +579,7 @@ function Wall(props: any) {
                               </div >
                             </Link>
                           </div>
-                          <div className="col-3 col-lg-1">
+                          <div className="col-3 ">
                             <Link
                               href="http://m.me/dario.vettura"
                               passHref={true}
@@ -585,7 +594,6 @@ function Wall(props: any) {
                         </div>
                       </div>
                     </section>
-                  </article>
                 </div>
               </div>
             </div>

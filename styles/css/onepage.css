@@ -1,9 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-#__next{
-  
-}
+
 .background{
   position: absolute;
   height: 250%;
@@ -27,8 +25,8 @@ body {
 
 }
 .nascosto{display: none}
-.menutext h2{font-family: 'Archivo Black', sans-serif;font-size:25px}
-.menutext h3{font-family: 'Archivo Black', sans-serif;font-size:20px;color: #ff8800}
+/* .menutext h2{font-family: 'Archivo Black', sans-serif;font-size:1em}
+.menutext h3{font-family: 'Archivo Black', sans-serif;font-size:20px;color: #ff8800} */
 .tops{margin-top: 60px !important}
 .web-site-main {padding-top: 100px
 
@@ -78,15 +76,15 @@ h2.section-tit2{ font-family: 'Archivo Black', sans-serif;font-size: 2.5em;}
   font-size: 300px;
   cursor: pointer;
 }
-.hero,.hero2{margin-top: 100px}
+
 .hero h1,.hero2 h2{
   font-family: 'Archivo Black', sans-serif;
-  font-size: 50px;
+  font-size: clamp(0.2em, 20vw, 0.5em);
 	color: #fff
 }
 .hero h2,.hero2 h3{
   font-family: 'Archivo Black', sans-serif;
-  font-size: 40px;
+  font-size: clamp(0.1em, 20vw, 0.4em);
 	color: #ff8800
 }
 
@@ -117,7 +115,7 @@ h2.section-tit2{ font-family: 'Archivo Black', sans-serif;font-size: 2.5em;}
 
 .log{margin-top: 0px !important}
 .log h2{font-size: 300px}
-.icona2{height: 90px;margin-top: 50px}
+.icona2{height: 50px;margin-top: 10px}
 
 .face {
   background-image: url("/img/facebook.png");
@@ -137,7 +135,7 @@ h2.section-tit2{ font-family: 'Archivo Black', sans-serif;font-size: 2.5em;}
   background-size: contain;
   background-repeat: no-repeat
 }
-.sottitolo2 p{color: gray;margin-top: 30px;font-size: 0.5em}
+.sottitolo2 p{color: gray;margin-top: 10px;}
 span a{color: #ff8800;}
 
 /*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*//*WORKS STYLE*/
