@@ -33,16 +33,16 @@ const Post = () => {
     typeof window === 'undefined'
       ? Buffer.from(str).toString('base64')
       : window.btoa(str)
-  useEffect(() => {
-    {
-      // Aos.init();
-      menu();
-      preloader();
-      game();
+  // useEffect(() => {
+  //   {
+  //     // Aos.init();
+  //     menu();
+  //     preloader();
+  //     game();
 
-    }
+  //   }
 
-  }, [])
+  // }, [])
 
   const item = works.find(item => item.id === parseInt(id));
 

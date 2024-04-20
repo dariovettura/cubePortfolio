@@ -75,16 +75,16 @@ export const Card: React.FC<Props> = ({ id, title, category, theme, isSelected, 
 
 const Home: React.FC<Props> = ({ video }) => {
 
-  useEffect(() => {
-    {
-      // Aos.init();
-      menu();
-      // preloader();
-      game();
+  // useEffect(() => {
+  //   {
+  //     // Aos.init();
+  //     menu();
+  //     // preloader();
+  //     game();
     
-    }
+  //   }
 
-  }, [])
+  // }, [])
 
 
 

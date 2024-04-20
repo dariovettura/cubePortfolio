@@ -22,6 +22,7 @@ import Link from 'next/link';
 import Menu from '../component/Menu';
 import Head from 'next/head';
 import { NextSeo } from 'next-seo';
+import Wall from '../component/Wall';
 
 
 
@@ -73,9 +74,10 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 
     />
     <AnimatePresence exitBeforeEnter >
-      <div className="glass glassVisible"></div>
+      <div className="glass "></div>
       <div className="background"></div>
-      <Preloader />
+      {/* <Preloader /> */}
+      {/* <Wall/> */}
       <header className='header'>
         <div className="logo">
           <Link href="/"
