@@ -12,17 +12,15 @@ import type { AppProps } from 'next/app';
 import { Provider } from "react-redux"
 import { store } from '../store/index'
 import { useEffect, useRef } from 'react';
-import Aos from 'aos';
+
 import { menu } from '../utils/menu';
-import { preloader } from '../utils/preloader';
-import { game } from '../utils/game';
-import Script from 'next/script';
-import Preloader from '../component/Preloader';
+
 import Link from 'next/link';
 import Menu from '../component/Menu';
 import Head from 'next/head';
 import { NextSeo } from 'next-seo';
 import Wall from '../component/Wall';
+
 
 
 
@@ -34,7 +32,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       // Aos.init();
       menu();
       // preloader();
-      game();
+      // game();
     
     }
 
@@ -89,6 +87,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       </header>
       <div className="root">
         <div className='rooot'>
+         
           <Component key={router.route} {...pageProps} />
         </div>
       </div>

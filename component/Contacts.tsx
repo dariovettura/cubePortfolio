@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
+import Gioco from './Gioco';
 
 function Contacts(props:any) {
   return (
     <section id="contacts" className="web-site-main">
-          <div className="container-fluid" id="herogioco">
+          {/* <div className="container-fluid" id="herogioco">
             <div className="row justify-content-center" id="rigagioco">
               <div className="col-12" id="colgioco">
                 <canvas id="bg"></canvas>
@@ -13,7 +14,8 @@ function Contacts(props:any) {
               <div className="col-12" id="colgioco2"></div>
             </div>
             <div id="view"></div>
-          </div>
+          </div> */}
+          <Gioco/>
           <div className="container-fluid">
             <div className="row text-center">
               <div className="col-12 titolo">
