@@ -157,7 +157,7 @@ function Wall(props: any) {
           rooot[i].classList.add("glassVisible");
         }
       };
-      addRooot();
+      // addRooot();
       const gNavItems: any = document.querySelectorAll(".global-menu__item");
       const elmOverlay: any = document.querySelector(".shape-overlays");
       const overlay: any = new ShapeOverlays(elmOverlay);
