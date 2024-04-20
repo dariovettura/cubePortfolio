@@ -1,11 +1,30 @@
 @charset "UTF-8";
 /* CSS Document */
 
-
+#__next{
+  
+}
+.background{
+  position: absolute;
+  height: 250%;
+  width: 100%;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.293) 1px, transparent 0);
+  background-size: 10px 10px;
+  background-position: -19px -19px;
+  mask-image: radial-gradient(
+    ellipse at 100% 0%,
+    black 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
+}
 
 body {
   background-color: rgb(34, 34, 34);
+ 
   overflow-x: hidden;
+ 
+
+
 }
 .nascosto{display: none}
 .menutext h2{font-family: 'Archivo Black', sans-serif;font-size:25px}
@@ -14,7 +33,7 @@ body {
 .web-site-main {padding-top: 100px
 
 }
-.root{display: flex;justify-content: center;}
+.root{display: flex;justify-content: center;z-index: 1;}
 .rooot{opacity: 1; transition: opacity 1s; max-width: 900px; }
 .header{opacity: 1; transition: opacity 1s; }
 .noVisible{opacity: 0; transition: opacity 1s; }

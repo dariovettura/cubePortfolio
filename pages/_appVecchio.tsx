@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
     {
       // Aos.init();
       menu();
-      // preloader();
+      preloader();
       game();
     
     }

@@ -79,7 +79,7 @@ const Home: React.FC<Props> = ({ video }) => {
     {
       // Aos.init();
       menu();
-      preloader();
+      // preloader();
       game();
     
     }
