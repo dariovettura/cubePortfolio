@@ -70,11 +70,8 @@
   0 0 0.8rem #ff8800,
   0 0 2.8rem #ff8800,
   inset 0 0 1.3rem #ff8800;  */
-  /* background-color: rgba(50, 50, 50, 0.85); */
-  background: rgba(0, 0, 0, 0.2);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
+  background-color: rgba(50, 50, 50, 0.85);
+
   font-size: 1em;
   line-height: 1em;
   color: #fff;
