@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
   useEffect(() => {
     {
       // Aos.init();
-      menu();
+      // menu();
       // preloader();
       // game();
     
@@ -72,10 +72,10 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 
     />
     <AnimatePresence exitBeforeEnter >
-      <div className="glass "></div>
+      <div className="glass glassVisible"></div>
       <div className="background"></div>
       {/* <Preloader /> */}
-      {/* <Wall/> */}
+      <Wall/>
       <header className='header'>
         <div className="logo">
           <Link href="/"
@@ -83,7 +83,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
             <h2>D<span>.</span></h2>
           </Link>
         </div>
-        <Menu />
+        {/* <Menu /> */}
       </header>
       <div className="root">
         <div className='rooot'>
