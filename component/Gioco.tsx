@@ -181,15 +181,18 @@ ball.dx = 1;
 }
 
 
+const init =
+React.useCallback(async (node: any) => {
+  if (node) {
+    game()
+  }
+}, []);
 
 
-React.useEffect(()=>{
-  game(),[]
-})
 
   return (
     
-          <div className="container-fluid" id="herogioco">
+          <div ref={init} className="container-fluid" id="herogioco">
             <div className="row justify-content-center" id="rigagioco">
               <div className="col-12" id="colgioco">
                 <canvas id="bg"></canvas>
