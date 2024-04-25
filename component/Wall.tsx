@@ -386,7 +386,7 @@ function Wall(props: any) {
             <div className="global-menu__wrap">
               <div className="global-menu__item global-menu__item--demo-3 is-opened">
                 <div >
-                  <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ velocity: 3, delay: 1.5, }}>
+                  <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ velocity: 3, delay: 1.1, }}>
                     <article className="viewport nascostos">
 
                       <section className="cube rotating">
@@ -501,7 +501,7 @@ function Wall(props: any) {
                         </div>
                         <div className="col-12 sottitolo2">
                           <p>
-                            © Dario Vettura 2020<span>.</span>
+                            © Dario Vettura 2024<span>.</span>
                           </p>
                         </div>
                       </div>
