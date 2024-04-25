@@ -133,134 +133,17 @@ function Wall(props: any) {
 
 
     (function () {
-
-      const elmHamburger: any = document.querySelector(".hamburger");
-      const menulink1: any = document.querySelector(".menulink1");
-      const menulink2: any = document.querySelector(".menulink2");
-      const menulink3: any = document.querySelector(".menulink3");
       const bodys: any = document.querySelector("body");
-      const cubo: any = document.querySelector(".cube");
-      const view: any = document.querySelector(".viewport");
-      const menutext: any = document.querySelector(".menutext");
-      const rooot: any = document.querySelectorAll(".glass");
-
       bodys.classList.add("overflows");
 
 
-      const removeRooot = () => {
-        for (var i = 0; i < rooot.length; i++) {
-          rooot[i].classList.remove("glassVisible");
-        }
-      };
-
-      const addRooot = () => {
-        for (var i = 0; i < rooot.length; i++) {
-          rooot[i].classList.add("glassVisible");
-        }
-      };
-      // addRooot();
-      const gNavItems: any = document.querySelectorAll(".global-menu__item");
-      const elmOverlay: any = document.querySelector(".shape-overlays");
-      const overlay: any = new ShapeOverlays(elmOverlay);
 
     
 
-      // elmHamburger?.addEventListener("click", () => {
-      //   if (overlay.isAnimating) {
-      //     return false;
-      //   }
-      // //   overlay.toggle();
-      //   if (overlay.isOpened === true) {
-      //     elmHamburger?.classList.add("is-opened-navi");
-      //     bodys.classList.add("overflows");
-      //     // cubo.classList.add("rotating");
-      //     view.classList.remove("nascosto");
-      //     menutext.classList.remove("nascosto");
-      //     addRooot();
-
-      //     for (var i = 0; i < gNavItems.length; i++) {
-      //       gNavItems[i].classList.add("is-opened");
-      //     }
-      //   } else {
-      // //     elmHamburger.classList.remove("is-opened-navi");
-      //     bodys.classList.remove("overflows");
-      //     cubo.classList.remove("rotating");
-      //     removeRooot();
-
-      //     for (var i = 0; i < gNavItems.length; i++) {
-      //       gNavItems[i].classList.remove("is-opened");
-      //     }
-      //   }
-      // });
-      // menulink1?.addEventListener("click", () => {
-      //   if (overlay.isAnimating) {
-      //     return false;
-      //   }
-      // //   overlay.toggle();
-      //   if (overlay.isOpened === true) {
-      // //     elmHamburger.classList.add("is-opened-navi");
-      //     bodys.classList.add("overflows");
-      //     addRooot();
-      //     for (var i = 0; i < gNavItems.length; i++) {
-      //       gNavItems[i].classList.add("is-opened");
-      //     }
-      //   } else {
-      // //     elmHamburger.classList.remove("is-opened-navi");
-      //     bodys.classList.remove("overflows");
-      //     removeRooot();
-      //     for (var i = 0; i < gNavItems.length; i++) {
-      //       gNavItems[i].classList.remove("is-opened");
-      //     }
-      //   }
-      // });
-      // menulink2?.addEventListener("click", () => {
-      //   if (overlay.isAnimating) {
-      //     return false;
-      //   }
-      // //   overlay.toggle();
-      //   if (overlay.isOpened === true) {
-      // //     elmHamburger.classList.add("is-opened-navi");
-      //     bodys.classList.add("overflows");
-      //     addRooot();
-      //     for (var i = 0; i < gNavItems.length; i++) {
-      //       gNavItems[i].classList.add("is-opened");
-      //     }
-      //   } else {
-      // //     elmHamburger.classList.remove("is-opened-navi");
-      //     bodys.classList.remove("overflows");
-      //     removeRooot();
-      //     for (var i = 0; i < gNavItems.length; i++) {
-      //       gNavItems[i].classList.remove("is-opened");
-      //     }
-      //   }
-      // });
-      // menulink3?.addEventListener("click", () => {
-      //   if (overlay.isAnimating) {
-      //     return false;
-      //   }
-      // //   overlay.toggle();
-      //   if (overlay.isOpened === true) {
-      // //     elmHamburger.classList.add("is-opened-navi");
-      //     bodys.classList.add("overflows");
-      //     addRooot();
-      //     for (var i = 0; i < gNavItems.length; i++) {
-      //       gNavItems[i].classList.add("is-opened");
-      //     }
-      //   } else {
-      // //     elmHamburger.classList.remove("is-opened-navi");
-      //     bodys.classList.remove("overflows");
-      //     removeRooot();
-      //     for (var i = 0; i < gNavItems.length; i++) {
-      //       gNavItems[i].classList.remove("is-opened");
-      //     }
-      //   }
-      // });
+      
     })();
 
-    //
-    // these easing functions are based on the code of glsl-easing module.
-    // https://github.com/glslify/glsl-easings
-    //
+
 
     const ease = {
       exponentialIn: (t: any) => {
@@ -421,7 +304,7 @@ function Wall(props: any) {
           y: viewport.y + delta * scrollFactor
         });
 
-        evt.preventDefault(); // Prevent default scroll behavior
+        // evt.preventDefault(); // Prevent default scroll behavior
       };
 
       var endHandler = function () {
@@ -475,6 +358,7 @@ function Wall(props: any) {
       for (var i = 0; i < rooot2.length; i++) {
         rooot2[i].classList.remove("sub-glass");
       }
+     
     };
     removeRooot();
     bodys.classList.remove("overflows");
@@ -546,7 +430,7 @@ function Wall(props: any) {
                               <div className="col-12 log">
                                 <Link href="#"
                                   passHref={true}>
-                                  <a>D<span>.</span></a>
+                                  <a onClick={removeIntro}>D<span>.</span></a>
                                 </Link>
                               </div>
                             </div>

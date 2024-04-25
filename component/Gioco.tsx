@@ -93,7 +93,7 @@ const RectConstructor = function(this: Rect, x: number, y: number, w: number, h:
             this.y + this.h > rect.y;
     };
     this.draw = function(): void {
-        ctx.fillStyle = "#ff8800";
+        ctx.fillStyle = "#fff";
         ctx.fillRect(this.x, this.y, this.w, this.h);
     };
 };

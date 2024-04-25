@@ -75,6 +75,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       <div className="glass glassVisible"></div>
       <div className="sub-glass"></div>
       <div className="background"></div>
+   
       {/* <Preloader /> */}
       <Wall/>
       <header className='header'>
