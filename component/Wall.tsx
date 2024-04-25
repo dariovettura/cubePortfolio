@@ -422,7 +422,7 @@ function Wall(props: any) {
                                 </Link>
                               </div>
                             </div>
-                          </div>
+                          </div> 
                         </div>
                         <div>
                           <div className="container-fluid">
