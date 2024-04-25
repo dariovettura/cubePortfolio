@@ -386,7 +386,7 @@ function Wall(props: any) {
             <div className="global-menu__wrap">
               <div className="global-menu__item global-menu__item--demo-3 is-opened">
                 <div >
-                  <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ velocity: 3, delay: 2, }}>
+                  <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ velocity: 3, delay: 1.5, }}>
                     <article className="viewport nascostos">
 
                       <section className="cube rotating">
@@ -468,8 +468,8 @@ function Wall(props: any) {
                     <div className="container-fluid menutext hero2 nascostos">
                       <div className="row rigahero text-center">
                         <div className="col-12 colhero">
-                          <h2>WEB DEV PORTFOLIO</h2>
-                          <h3>Dario Vettura</h3>
+                          <motion.h2 initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ velocity: 3, delay: 0.5, }}>WEB DEV PORTFOLIO</motion.h2>
+                          <motion.h3 initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ velocity: 3, delay: 0.7, }}>Dario Vettura</motion.h3>
                         </div>
                       </div>
 
@@ -480,7 +480,7 @@ function Wall(props: any) {
                           <Link
                             passHref={true}
                             href="https://mail.google.com/mail/?view=cm&source=mailto&to=d.vettura.wd@gmail.com"
-                          ><div className="icona2 face"></div></Link>
+                          ><motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ velocity: 3, delay: 0.8, }} className="icona2 face"></motion.div></Link>
                         </div>
                         <div className="col-3 ">
                           <Link
@@ -488,8 +488,8 @@ function Wall(props: any) {
                             href="http://m.me/dario.vettura"
                             passHref={true}
                           >
-                            <div className="icona2 insta">
-                            </div >
+                            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ velocity: 3, delay: 0.9, }}className="icona2 insta">
+                            </motion.div >
                           </Link>
                         </div>
                         <div className="col-3 ">
@@ -497,7 +497,7 @@ function Wall(props: any) {
                             href="http://m.me/dario.vettura"
                             passHref={true}
                           >
-                            <div className="icona2 linkedin"></div></Link>
+                            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ velocity: 3, delay: 1, }} className="icona2 linkedin"></motion.div></Link>
                         </div>
                         <div className="col-12 sottitolo2">
                           <p>
