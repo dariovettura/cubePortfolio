@@ -551,7 +551,7 @@ function Wall(props: any) {
                   
                   </article>
                   </motion.div>
-                  <section className=''>
+                  <section className='hero-text'>
                       <div className="container-fluid menutext hero2 nascostos">
                         <div className="row rigahero text-center">
                           <div className="col-12 colhero">
