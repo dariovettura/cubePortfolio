@@ -88,12 +88,12 @@
   0 0 0.8rem #ff8800,
   0 0 2.8rem #ff8800,
   inset 0 0 1.3rem #ff8800;  */
-  background-color: rgba(50, 50, 50, 0.2);
+  background-color: rgba(50, 50, 50, 0.4);
 
   font-size: 1em;
   line-height: 1em;
   color: #fff;
-  border: 10px solid #fff;
+  border: 3px solid #fff;
   border-radius: 3px;
 }
 
