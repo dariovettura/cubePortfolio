@@ -138,9 +138,9 @@ function Wall(props: any) {
 
 
 
-    
 
-      
+
+
     })();
 
 
@@ -358,7 +358,7 @@ function Wall(props: any) {
       for (var i = 0; i < rooot2.length; i++) {
         rooot2[i].classList.remove("sub-glass");
       }
-     
+
     };
     removeRooot();
     bodys.classList.remove("overflows");
@@ -372,11 +372,11 @@ function Wall(props: any) {
 
 
   const init =
-  React.useCallback(async (node: any) => {
-    if (node) {
-      menu()
-    }
-  }, []);
+    React.useCallback(async (node: any) => {
+      if (node) {
+        menu()
+      }
+    }, []);
 
   return (
     <div ref={init} className="demo-3">
@@ -403,26 +403,26 @@ function Wall(props: any) {
                           <div className="container-fluid">
                             <div className="row text-center">
                               <div className="col-12">
-                                <Link  href="#about"
+                                <Link href="#about"
                                   passHref={true}>
                                   <a onClick={removeIntro} className="menulink2">ABOUT<span>.</span></a>
                                 </Link>
                               </div>
                             </div>
                           </div>
-
+                          <Link href="#contacts"
+                            passHref={true}>
+                            <a onClick={removeIntro} className="menulink3">CONTACTS<span>.</span></a>
+                          </Link>
                         </div>
                         <div>
                           <div className="container-fluid">
                             <div className="row text-center">
                               <div className="col-12">
-                                <Link href="#works"
-                                  passHref={true}>
-                                  <a onClick={removeIntro} className="menulink1">WORKS<span>.</span></a>
-                                </Link>
+
                               </div>
                             </div>
-                          </div> 
+                          </div>
                         </div>
                         <div>
                           <div className="container-fluid">
@@ -440,10 +440,11 @@ function Wall(props: any) {
                           <div className="container-fluid">
                             <div className="row text-center">
                               <div className="col-12">
-                                <Link href="#contacts"
+                                <Link href="#works"
                                   passHref={true}>
-                                  <a onClick={removeIntro} className="menulink3">CONTACTS<span>.</span></a>
+                                  <a onClick={removeIntro} className="menulink1">WORKS<span>.</span></a>
                                 </Link>
+
                               </div>
                             </div>
                           </div>
@@ -488,7 +489,7 @@ function Wall(props: any) {
                             href="http://m.me/dario.vettura"
                             passHref={true}
                           >
-                            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ velocity: 3, delay: 0.9, }}className="icona2 insta">
+                            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ velocity: 3, delay: 0.9, }} className="icona2 insta">
                             </motion.div >
                           </Link>
                         </div>
