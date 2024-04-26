@@ -410,16 +410,16 @@ function Wall(props: any) {
                               </div>
                             </div>
                           </div>
-                          <Link href="#contacts"
-                            passHref={true}>
-                            <a onClick={removeIntro} className="menulink3">CONTACTS<span>.</span></a>
-                          </Link>
+
                         </div>
                         <div>
                           <div className="container-fluid">
                             <div className="row text-center">
                               <div className="col-12">
-
+                                <Link href="#contacts"
+                                  passHref={true}>
+                                  <a onClick={removeIntro} className="menulink3">CONTACTS<span>.</span></a>
+                                </Link>
                               </div>
                             </div>
                           </div>
