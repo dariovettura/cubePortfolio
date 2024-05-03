@@ -469,8 +469,8 @@ function Wall(props: any) {
                     <div className="container-fluid menutext hero2 nascostos">
                       <div className="row rigahero text-center">
                         <div className="col-12 colhero">
-                          <motion.h2 initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ velocity: 3, delay: 0.5, }}>WEB DEV PORTFOLIO</motion.h2>
-                          <motion.h3 initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ velocity: 3, delay: 0.7, }}>Dario Vettura</motion.h3>
+                          <motion.h2 onClick={removeIntro} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ velocity: 3, delay: 0.5, }}>WEB DEV PORTFOLIO</motion.h2>
+                          <motion.h3 onClick={removeIntro} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ velocity: 3, delay: 0.7, }}>Dario Vettura</motion.h3>
                         </div>
                       </div>
 
