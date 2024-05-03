@@ -26,17 +26,6 @@ import Wall from '../component/Wall';
 
 function MyApp({ Component, pageProps, router }: AppProps) {
 
-  const load = useRef(null)
-  useEffect(() => {
-    {
-      // Aos.init();
-      // menu();
-      // preloader();
-      // game();
-    
-    }
-
-  }, [])
 
 
 
@@ -48,6 +37,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
           href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
           rel="stylesheet"
         />
+        <meta name="google-site-verification" content="BBG-Cv1cRfQM5f4PtKNtXn3k_XRPGtgZ0rgcGxZZsIM" />
     </Head>
     <NextSeo
       title='Portfolio'
