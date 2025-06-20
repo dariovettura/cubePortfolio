@@ -16,7 +16,7 @@ interface Props {
 const Casa: NextPage<Props> = ({ posts }) => {
 
   useEffect(() => {
-    Axios.get('https://beergarden.free.nf/api/categories')
+    Axios.get('https://beergarden-menu-1.onrender.com/api/categories')
       .then((response) => {
         console.log('Risposta API categorie:', response.data);
       })
